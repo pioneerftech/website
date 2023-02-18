@@ -4,8 +4,9 @@ import './howItWorks.scss';
 function HowItWorks() {
     return (
         <div className='howItWorks-container'>
-            <div className='heading'>
-                HowItWorks
+            
+            <div className='image-container'>
+                <div className='tag'>How It Works</div>
             </div>
         </div>
     )

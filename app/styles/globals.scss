@@ -38,7 +38,7 @@
   --white: #e6f1ff;
   /* --primary: #4ddbff; */
   --primary-color: #02967e;
-  --primary-tint: rgba(100, 255, 218, 0.1);
+  --primary-tint: rgba(5, 5, 5, 0.548);
   --fz-xxs: 12px;
   --fz-xs: 13px;
   --fz-sm: 14px;
@@ -74,6 +74,10 @@ body {
   overflow-x: hidden;
   background: white;
   color: black;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 a {

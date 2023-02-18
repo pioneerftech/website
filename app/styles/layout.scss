@@ -1,10 +1,9 @@
 .app-contanier {
   height: 100vh;
   width: 100%;
-  .site-content {
-    margin-top: 80px;
-    padding: 10px;
-  }
+  // .site-content {
+  //   padding: 10px;
+  // }
 }
 .navigation-ourter-wrap {
   display: flex;
@@ -111,8 +110,9 @@
 .nav-item-wrap ul li .nav-item {
   padding: 10px;
   font-size: 19px;
-  font-family: "SemiBold";
-  color: #494852;
+  font-family: var(--font-Regular);
+  color: white;
+  letter-spacing: 0.5px;
 }
 
 /* 
