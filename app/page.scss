@@ -1,2 +1,42 @@
 .home-page-container {
+  .image-container {
+    height: 100vh;
+    width: 100%;
+    background-image: url("../public/home/banner.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: var(--primary-tint);
+      //   z-index: -1;
+    }
+  }
+  .hero-content {
+    z-index: 2;
+    letter-spacing: var(--letter-spacong-md);
+    .heading {
+      font-size: var(--fz-heading);
+      letter-spacing: var(xl);
+      font-family: var(--font-Bold);
+      color: var(--white);
+    }
+    .subheading {
+      color: var(--lightest-slate);
+      font-size: var(--fz-lg);
+      font-family: var(--font-SemiBold);
+    }
+  }
 }
