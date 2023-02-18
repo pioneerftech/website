@@ -36,6 +36,10 @@
   --light-slate: #a8b2d1;
   --lightest-slate: #ccd6f6;
   --white: #e6f1ff;
+  --letter-spacong-sm: 0.2px;
+  --letter-spacong-md: 0.5px;
+  --letter-spacong-lg: 1px;
+  --letter-spacong-xl: 2px;
   /* --primary: #4ddbff; */
   --primary-color: #02967e;
   --primary-tint: rgba(5, 5, 5, 0.548);
@@ -151,7 +155,7 @@ a {
   letter-spacing: 1px;
 }
 
-.sub-subheading {
+.subheading {
   font-size: 14px;
   font-family: var(--secondary-font);
   color: #000000de;
