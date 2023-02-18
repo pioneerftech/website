@@ -69,9 +69,9 @@ export default function RootLayout({
                         onNavLinkClick(event);
                       }}
                       className="nav-item"
-                      href="/howitwork"
+                      href="/ourApproach"
                     >
-                      How It Works
+                      Our Approach
                     </Link>
                   </li>
                   <li className="fadedown-enter-done">
