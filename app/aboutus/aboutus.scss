@@ -1,3 +1,222 @@
 .about-container {
   color: var(--primary-color);
+  .image-container {
+    height: 85vh;
+    width: 100%;
+    background-image: url("../../public/aboutus/banner.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: var(--primary-tint);
+    }
+    .tag {
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 2;
+      font-size: var(--fz-heading);
+    }
+  }
+  .heading {
+    font-size: var(--fz-heading);
+    letter-spacing: var(xl);
+    font-family: var(--font-Bold);
+    width: 100%;
+    padding: 0 5%;
+  }
+
+  .content-sub-tag {
+    font-size: var(--fz-small);
+    width: 100%;
+    padding: 2% 5%;
+    height: auto;
+    text-align: center;
+    color: black;
+  }
+  .cards-wraper {
+    width: 100%;
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+
+    .cards {
+      width: calc(100vw / 3);
+      height: 400px;
+      border-radius: 10px;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-direction: column;
+      &::after {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(26, 25, 25, 0.589);
+        backdrop-filter: blur(5px);
+      }
+      .card-logo-wrap {
+        height: 50px;
+        width: 50px;
+        z-index: 11;
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+      .card-content-tag {
+        color: white;
+        display: flex;
+        // justify-content: start;
+        // align-items: center;
+        z-index: 2;
+        font-size: var(--fz-heading);
+      }
+      .card-content-sub-tag {
+        font-size: var(--fz-small);
+        width: 100%;
+        padding: 2% 5%;
+        height: auto;
+        text-align: justify;
+        z-index: 2;
+        color: white;
+      }
+    }
+  }
+  .cards:nth-child(1) {
+    background-image: url("../../public/aboutus/ourmission.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .cards:nth-child(2) {
+    background-image: url("../../public/aboutus/vision.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .cards:nth-child(3) {
+    background-image: url("../../public/aboutus/values.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .content-image-container {
+    width: 30%;
+    height: 90%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 7px 29px 0 hsl(240deg 5% 41% / 20%);
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+  .content-sub-container {
+    width: 100%;
+    height: 700px;
+    gap: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5%;
+  }
+  .content-wrap {
+    width: 65%;
+    height: 100%;
+    padding: 2.5%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 7px 29px 0 hsl(240deg 5% 41% / 20%);
+    gap: 20px;
+    border-radius: 10px;
+
+    .content-description {
+      font-size: var(--fz-sm);
+      color: rgb(65, 63, 63);
+      letter-spacing: 0.8px;
+      text-align: justify;
+      line-height: 25px;
+    }
+  }
+  .ourteam-wraper {
+    width: 100%;
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+
+    .ourteam-cards {
+      width: calc(100vw / 3);
+      height: 450px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      position: relative;
+
+      .ourteam-image {
+        height: 70%;
+        width: 100%;
+        box-shadow: 0 7px 29px 0 hsl(240deg 5% 41% / 20%);
+        border-radius: 10px;
+      }
+      .name-wraper {
+        height: 30%;
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        svg {
+          height: 100%;
+          width: 100%;
+          fill: var(--primary-color);
+          z-index: 1;
+        }
+        .name-content {
+          height: 100%;
+          width: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 99;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          gap: 10px;
+        }
+        .name {
+          font-size: var(--fz-xl);
+          color: white;
+        }
+        .position {
+          font-size: var(--fz-sm);
+          color: white;
+        }
+      }
+    }
+  }
 }

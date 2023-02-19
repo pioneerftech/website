@@ -1,7 +1,7 @@
 .ourApproach-container {
   background-color: white;
   .image-container {
-    height: 100vh;
+    height: 90vh;
     width: 100%;
     background-image: url("../../public/ourApproach/banner.jpg");
     background-repeat: no-repeat;
@@ -91,6 +91,12 @@
         }
       }
     }
+  }
+  .content-sub-tag {
+    font-size: var(--fz-small);
+    width: 100%;
+    padding: 5%;
+    height: auto;
   }
   @media (max-width: 720px) {
     .content-container {

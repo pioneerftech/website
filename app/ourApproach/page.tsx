@@ -7,6 +7,8 @@ import content3 from "../../public/ourApproach/content3.jpg";
 import content4 from "../../public/ourApproach/content4.jpg";
 import content5 from "../../public/ourApproach/content5.jpg";
 import content6 from "../../public/ourApproach/content6.jpg";
+import PageSaperator from '@pageSaperator';
+
 
 
 function ourApproach() {
@@ -15,6 +17,12 @@ function ourApproach() {
             <div className='image-container'>
                 <div className='tag'>Our Approach</div>
             </div>
+            <PageSaperator/>
+            <div className='content-sub-tag'>At Manav Kartavya, we have mainstreamed our means for creating ‘The Advantaged Society’ into approaches for every project. We have well-thought proven means for everything from building an idea to help to an individual especially from economically weaker communities to putting that idea into execution on board. The consistency in our approaches guarantees that we deliver a quality empowerment every time.
+<br /><br />
+As every student cannot be taught in same way for the best output, we believe a single approach cannot be applied to each task for the best output. This is why Manav Kartavya has designed customized approaches based on well-versed research for every project to meet the needs of each project.</div>
+            <PageSaperator/>
+
             <div className='content-container'>
                 <div className='content-sub-container'>
                     <div className='content-wrap'>
