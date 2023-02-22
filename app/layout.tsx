@@ -1,16 +1,19 @@
-"use client"
-import '@styles/globals.scss';
-import '@styles/layout.scss'
-import { useState } from 'react';
-import Link from 'next/link'
-import Image from 'next/image'
-import LOGO from '../public/logo.png'
+"use client";
+import "@styles/globals.scss";
+import "@styles/layout.scss";
+import { useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
+import LOGO from "../public/logo.png";
+import Footer from "@footer/footer";
+import PageSaperator from "@pageSaperator";
+
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
-  const [mobileNavActive, setmobileNavActive] = useState(false)
+  const [mobileNavActive, setmobileNavActive] = useState(false);
   const onNavLinkClick = (event: any) => {
     setmobileNavActive(false);
     !status && document.body.classList.remove("blur");
@@ -18,21 +21,18 @@ export default function RootLayout({
       const element: any = document.getElementById("header");
       element.style.top = "0";
     }, 1000);
-  }
+  };
   const navClick = (status: any) => {
     setmobileNavActive(status);
     !status && document.body.classList.remove("blur");
-  }
+  };
 
   return (
     <html lang="en">
       <head />
       <body>
         <div className="app-contanier">
-          <header
-            id="header"
-            className="navigation-ourter-wrap"
-          >
+          <header id="header" className="navigation-ourter-wrap">
             <div className="inner-wrap">
               <Link
                 onClick={(event) => {
@@ -44,10 +44,10 @@ export default function RootLayout({
                 <Image
                   src={LOGO}
                   alt="Pioneer foundation"
-                // width={500} automatically provided
-                // height={500} automatically provided
-                // blurDataURL="data:..." automatically provided
-                // placeholder="blur" // Optional blur-up while loading
+                  // width={500} automatically provided
+                  // height={500} automatically provided
+                  // blurDataURL="data:..." automatically provided
+                  // placeholder="blur" // Optional blur-up while loading
                 />
               </Link>
               <div className="nav-item-wrap">
@@ -140,9 +140,7 @@ export default function RootLayout({
                         ? "mobile-nav-btn"
                         : "mobile-nav-active-btn"
                     }
-                    onClick={() =>
-                      navClick(mobileNavActive ? false : true)
-                    }
+                    onClick={() => navClick(mobileNavActive ? false : true)}
                   >
                     <div className="ham-box">
                       <div className="ham-box-inner"></div>
@@ -242,11 +240,13 @@ export default function RootLayout({
               </div>
             </div>
           </header>
-          <main className='site-content'>
+          <main className="site-content">
             {children}
+            <PageSaperator />
+            <Footer />
           </main>
         </div>
       </body>
     </html>
-  )
+  );
 }

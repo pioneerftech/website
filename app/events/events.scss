@@ -1,2 +1,185 @@
 .events-container {
+  .image-container {
+    height: 90vh;
+    width: 100%;
+    background-image: url("../../public/event/banner.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: var(--primary-tint);
+    }
+    .tag {
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 2;
+      font-size: var(--fz-heading);
+    }
+  }
+  .hero-content {
+    z-index: 2;
+    letter-spacing: var(--letter-spacong-md);
+    .heading {
+      font-size: var(--fz-heading);
+      letter-spacing: var(xl);
+      font-family: var(--font-Bold);
+      color: var(--white);
+    }
+    .subheading {
+      color: var(--white);
+      font-size: var(--fz-xl);
+      font-family: var(--font-SemiBold);
+    }
+  }
+  .blog-card-container {
+    height: auto;
+    width: 100%;
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 50px;
+    flex-wrap: wrap;
+    .blog-card {
+      height: 400px;
+      width: 30%;
+      padding: 1%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 5px;
+      border-radius: 10px;
+      box-shadow: 0 7px 29px 0 hsl(240deg 5% 41% / 20%);
+
+      .blog-image-container {
+        height: 50%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        position: relative;
+        background-color: #dee1ec;
+        border-radius: 10px;
+        // border: dashed 1px black;
+
+        .image-content-bg {
+          float: right;
+          height: 80%;
+          width: 70%;
+          background-color: var(--primary-color);
+          display: flex;
+          align-items: start;
+          justify-content: center;
+          flex-direction: column;
+          padding: 0px 10px 0px 50px;
+          border-radius: 5px;
+          .image-tag {
+            font-size: var(--fz-l);
+            color: white;
+            width: 100%;
+            text-align: center;
+            letter-spacing: var(--letter-spacong-xl);
+          }
+          .image-sub-tag {
+            font-size: var(--fz-sm);
+            letter-spacing: var(--letter-spacong-lg);
+            width: 100%;
+            text-align: left;
+          }
+          .image-description {
+            font-size: var(--fz-sm);
+            width: 100%;
+            height: 55px;
+            text-align: center;
+            letter-spacing: var(--letter-spacong-sm);
+          }
+          .foundation-tag {
+            width: 100%;
+            background-color: black;
+            text-align: center;
+            letter-spacing: var(--letter-spacong-xl);
+            border-radius: 5px;
+            font-size: var(--fz-sm);
+            font-weight: 600;
+            padding: 5px 0;
+            color: white;
+          }
+        }
+        .blog-image-wrap {
+          height: 150px;
+          width: 150px;
+          background-color: white;
+          position: absolute;
+          left: 5px;
+          border-radius: 50%;
+          border-top: 5px solid black;
+          border-bottom: 5px solid black;
+          border-right: 5px solid black;
+          outline: 3px solid white;
+          overflow: hidden;
+          img {
+            height: 100%;
+            width: 100%;
+          }
+        }
+      }
+      .blog-content-container {
+        height: 40%;
+        width: 90%;
+        display: flex;
+        align-items: start;
+        justify-content: space-evenly;
+        flex-direction: column;
+        position: relative;
+        .blog-date-depart-wrap {
+          font-size: var(--fz-sm);
+          color: gray;
+          span {
+            color: var(--primary-color);
+            font-size: var(--fz-sm);
+          }
+        }
+        .blog-content-tagline {
+          font-size: var(--fz-xl);
+          font-weight: 600;
+        }
+      }
+      .event-btn-wraper {
+        width: 100%;
+        height: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 0 10px;
+        .event-btn {
+          height: 100%;
+          width: 60%;
+          background-color: var(--primary-color);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: white;
+          border: 1px solid black;
+          border-radius: 5px;
+          box-shadow: 0 7px 29px 0 hsl(240deg 5% 41% / 20%);
+        }
+      }
+    }
+  }
 }

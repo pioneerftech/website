@@ -2,8 +2,14 @@ import React from "react";
 import "./blog.scss";
 import PageSaperator from "@pageSaperator";
 import Image from "next/image";
-import cardimg1 from "../../public/blog/oldagehome.jpg";
-import cardimg2 from "../../public/blog/stressovercome.jpg";
+import cardimg1 from "../../public/blog/cardimg1.jpg";
+import cardimg2 from "../../public/blog/cardimg2.jpg";
+import cardimg3 from "../../public/blog/cardimg3.jpg";
+import cardimg4 from "../../public/blog/cardimg4.jpg";
+import cardimg5 from "../../public/blog/cardimg5.jpg";
+import cardimg6 from "../../public/blog/cardimg6.jpg";
+import cardimg7 from "../../public/blog/cardimg7.jpg";
+import cardimg8 from "../../public/blog/cardimg8.jpg";
 
 function Blog() {
   function FaRegComments() {
@@ -123,7 +129,7 @@ function Blog() {
         <div className="blog-card hover">
           <div className="blog-image-container">
             <div className="blog-image-wrap">
-              <Image src={cardimg1} alt="" />
+              <Image src={cardimg3} alt="" />
             </div>
             <div className="image-content-bg">
               <div className="image-sub-tag">The</div>
@@ -160,7 +166,7 @@ function Blog() {
         <div className="blog-card hover">
           <div className="blog-image-container">
             <div className="blog-image-wrap">
-              <Image src={cardimg1} alt="" />
+              <Image src={cardimg4} alt="" />
             </div>
             <div className="image-content-bg">
               <div className="image-sub-tag">5 Reasons</div>
@@ -197,7 +203,7 @@ function Blog() {
         <div className="blog-card hover">
           <div className="blog-image-container">
             <div className="blog-image-wrap">
-              <Image src={cardimg1} alt="" />
+              <Image src={cardimg5} alt="" />
             </div>
             <div className="image-content-bg">
               <div className="image-sub-tag">4 Important</div>
@@ -234,7 +240,7 @@ function Blog() {
         <div className="blog-card hover">
           <div className="blog-image-container">
             <div className="blog-image-wrap">
-              <Image src={cardimg1} alt="" />
+              <Image src={cardimg6} alt="" />
             </div>
             <div className="image-content-bg">
               <div className="image-sub-tag">For</div>
@@ -271,7 +277,7 @@ function Blog() {
         <div className="blog-card hover">
           <div className="blog-image-container">
             <div className="blog-image-wrap">
-              <Image src={cardimg1} alt="" />
+              <Image src={cardimg7} alt="" />
             </div>
             <div className="image-content-bg">
               <div className="image-sub-tag">Best</div>
@@ -308,12 +314,14 @@ function Blog() {
         <div className="blog-card hover">
           <div className="blog-image-container">
             <div className="blog-image-wrap">
-              <Image src={cardimg1} alt="" />
+              <Image src={cardimg8} alt="" />
             </div>
             <div className="image-content-bg">
-              <div className="image-sub-tag">How</div>
-              <div className="image-tag">Old Age Home</div>
-              <div className="image-description">Are Changing To Better</div>
+              <div className="image-sub-tag">Our</div>
+              <div className="image-tag">NGO's Role</div>
+              <div className="image-description">
+                In Child Education And Women empowerment.
+              </div>
               <div className="foundation-tag">PIONEER Foundation</div>
             </div>
           </div>
@@ -322,7 +330,8 @@ function Blog() {
               21st February 2023 / <span>Old Age Home</span>
             </div>
             <div className="blog-content-tagline">
-              A Small Glimpse of How Old Age Homes are changing to Better
+              Women empowerment, developing old age homes and promoting child
+              education
             </div>
           </div>
           <div className="blog-comment-view-wraper">
