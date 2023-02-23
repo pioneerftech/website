@@ -74,7 +74,8 @@
         align-items: center;
         justify-content: flex-end;
         position: relative;
-        background-color: #dee1ec;
+        // background-color: #dee1ec;
+        background-color: var(--primary-color);
         border-radius: 10px;
         // border: dashed 1px black;
 
@@ -82,7 +83,7 @@
           float: right;
           height: 80%;
           width: 70%;
-          background-color: var(--primary-color);
+          background-color: var(--secondary-color);
           display: flex;
           align-items: start;
           justify-content: center;
@@ -174,10 +175,22 @@
           display: flex;
           align-items: center;
           justify-content: center;
+          gap: 10px;
+          font-size: var(--fz-md);
           color: white;
-          border: 1px solid black;
           border-radius: 5px;
-          box-shadow: 0 7px 29px 0 hsl(240deg 5% 41% / 20%);
+          // box-shadow: 0 7px 29px 0 hsla(162, 53%, 36%, 0.459);
+          box-shadow: 3px 3px 36.1px -14px rgba(0, 0, 0, 0.04),
+            7.4px 7.4px 37.2px -14px rgba(0, 0, 0, 0.027),
+            14.8px 14.8px 16px -14px rgba(0, 0, 0, 0.012),
+            32.6px 32.6px 29.2px -14px rgba(0, 0, 0, 0.008),
+            79.1px 79.1px 133.2px -14px rgba(0, 0, 0, 0.006),
+            100px 100px 320px -14px rgba(0, 0, 0, 0.003);
+          span {
+            font-size: var(--fz-xxl);
+            display: flex;
+            align-items: center;
+          }
         }
       }
     }
