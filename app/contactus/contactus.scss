@@ -1,2 +1,160 @@
 .contactus-container {
+  .image-container {
+    height: 90vh;
+    width: 100%;
+    background-image: url("../../public/contactus/banner.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: var(--primary-tint);
+    }
+    .tag {
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 2;
+      font-size: var(--fz-heading);
+    }
+  }
+  .hero-content {
+    z-index: 2;
+    letter-spacing: var(--letter-spacong-md);
+    .heading {
+      font-size: var(--fz-heading);
+      letter-spacing: var(xl);
+      font-family: var(--font-Bold);
+      color: var(--white);
+    }
+    .subheading {
+      color: var(--white);
+      font-size: var(--fz-xl);
+      font-family: var(--font-SemiBold);
+    }
+  }
+  .content-wrap {
+    flex-direction: column;
+    padding: 20px;
+
+    .sub-heading {
+    }
+    .heading {
+    }
+    .content {
+      font-size: var(--fz-lg);
+      line-height: 30px;
+      padding: 10px;
+
+      span {
+        color: var(--primary-color);
+        text-align: left;
+      }
+    }
+    .privacy-content-container {
+      font-size: var(--fz-lg);
+      line-height: 30px;
+      padding: 10px;
+      display: flex;
+      align-items: left;
+      justify-content: flex-start;
+      flex-direction: column;
+      text-align: left;
+      width: 100%;
+      span {
+        color: var(--primary-color);
+      }
+    }
+  }
+  .coutactus-form-container {
+    width: 90%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 10px;
+    padding: 20px;
+    box-shadow: 0 7px 29px 0 hsl(240deg 5% 41% / 20%);
+
+    .contactus-form-sub-container {
+      width: 40%;
+      height: 500px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      //   border: 1px solid black;
+      padding: 20px;
+      .content {
+        color: var(--lightest-navy);
+        width: 100%;
+        padding: 20px;
+      }
+    }
+    .contactus-info-wrap {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      gap: 10px;
+      .contactus-info-row {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        .contactus-info-icon-wrap {
+          height: 100%;
+          width: 20%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .contactus-info-icon {
+            height: 60px;
+            width: 60px;
+            padding: 17px;
+            background-color: var(--primary-color);
+            border-radius: 10px;
+            color: white;
+            box-shadow: 0 7px 29px 0 hsl(240deg 5% 41% / 20%);
+            svg {
+              height: 100%;
+              width: 100%;
+            }
+          }
+        }
+        .contactus-info-content {
+          height: 60%;
+          width: 80%;
+          display: flex;
+          align-items: left;
+          justify-content: flex-start;
+          flex-direction: column;
+          .contactus-info-tag {
+            font-size: var(--fz-md);
+            font-weight: 600;
+            color: #050b2e;
+          }
+          .contactus-info-detail {
+            font-size: var(--fz-sm);
+            color: var(--lightest-navy);
+          }
+        }
+      }
+    }
+  }
 }
