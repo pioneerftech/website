@@ -1,0 +1,119 @@
+.events-details-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #dee1ecce;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  transition: var(--transition);
+
+  &.active {
+    transition: var(--transition);
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .event-details {
+    background: white;
+    position: relative;
+    padding: 20px;
+    width: 90%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    .event-details-sub-container {
+      height: 100%;
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex-direction: column;
+      gap: 40px;
+      .event-image-container {
+        height: 100%;
+        width: 100%;
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+      .hero-content {
+        z-index: 2;
+        letter-spacing: var(--letter-spacong-md);
+        padding: 20px;
+        .heading {
+          font-size: var(--fz-xxl);
+          letter-spacing: var(xl);
+          font-family: var(--font-Bold);
+          color: #323759;
+          text-align: left;
+        }
+        .subheading {
+          font-size: var(--fz-md);
+          line-height: 30px;
+          text-align: left;
+          color: var(--lightest-navy);
+        }
+      }
+      .event-detail-list-wrap {
+        height: auto;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        padding: 0 20px;
+        gap: 10px;
+        .event-detail-list-row {
+          height: 50px;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          gap: 20px;
+          .event-detail-icon-wrap {
+            height: 50px;
+            width: 50px;
+            padding: 15px;
+            border-radius: 50%;
+            background-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            svg {
+              height: 100%;
+              width: 100%;
+            }
+          }
+          .event-detail-content {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            height: 100%;
+            width: 80%;
+          }
+        }
+      }
+    }
+
+    .close-icon {
+      background: black;
+      color: white;
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      border-radius: 15px;
+    }
+  }
+}

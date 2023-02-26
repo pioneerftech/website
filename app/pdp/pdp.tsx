@@ -17,5 +17,3 @@ export default function pdp() {
     </div>
   );
 }
-
-// export default pdp;

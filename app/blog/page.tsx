@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import "./blog.scss";
 import PageSaperator from "@pageSaperator";
 import Image from "next/image";
@@ -11,8 +11,10 @@ import cardimg5 from "../../public/blog/cardimg5.jpg";
 import cardimg6 from "../../public/blog/cardimg6.jpg";
 import cardimg7 from "../../public/blog/cardimg7.jpg";
 import cardimg8 from "../../public/blog/cardimg8.jpg";
+import BlogDetails from "./blogDetails";
 
 function Blog() {
+  const [activeBlog, setActiveBlog] = useState(0);
   function FaRegComments() {
     return (
       <svg
@@ -53,7 +55,7 @@ function Blog() {
       </div>
       <PageSaperator />
       <div className="blog-card-container">
-        <div className="blog-card hover">
+        <div className="blog-card hover" onClick={() => setActiveBlog(1)}>
           <div className="blog-image-container">
             <div className="blog-image-wrap">
               <Image src={cardimg1} alt="" />
@@ -90,7 +92,7 @@ function Blog() {
             </div>
           </div>
         </div>
-        <div className="blog-card hover">
+        <div className="blog-card hover" onClick={() => setActiveBlog(2)}>
           <div className="blog-image-container">
             <div className="blog-image-wrap">
               <Image src={cardimg2} alt="" />
@@ -126,8 +128,8 @@ function Blog() {
               <div className="comment-view-tag">Views</div>
             </div>
           </div>
-        </div>{" "}
-        <div className="blog-card hover">
+        </div>
+        <div className="blog-card hover" onClick={() => setActiveBlog(3)}>
           <div className="blog-image-container">
             <div className="blog-image-wrap">
               <Image src={cardimg3} alt="" />
@@ -163,8 +165,8 @@ function Blog() {
               <div className="comment-view-tag">Views</div>
             </div>
           </div>
-        </div>{" "}
-        <div className="blog-card hover">
+        </div>
+        <div className="blog-card hover" onClick={() => setActiveBlog(4)}>
           <div className="blog-image-container">
             <div className="blog-image-wrap">
               <Image src={cardimg4} alt="" />
@@ -200,8 +202,8 @@ function Blog() {
               <div className="comment-view-tag">Views</div>
             </div>
           </div>
-        </div>{" "}
-        <div className="blog-card hover">
+        </div>
+        <div className="blog-card hover" onClick={() => setActiveBlog(5)}>
           <div className="blog-image-container">
             <div className="blog-image-wrap">
               <Image src={cardimg5} alt="" />
@@ -237,8 +239,8 @@ function Blog() {
               <div className="comment-view-tag">Views</div>
             </div>
           </div>
-        </div>{" "}
-        <div className="blog-card hover">
+        </div>
+        <div className="blog-card hover" onClick={() => setActiveBlog(6)}>
           <div className="blog-image-container">
             <div className="blog-image-wrap">
               <Image src={cardimg6} alt="" />
@@ -275,7 +277,7 @@ function Blog() {
             </div>
           </div>
         </div>
-        <div className="blog-card hover">
+        <div className="blog-card hover" onClick={() => setActiveBlog(7)}>
           <div className="blog-image-container">
             <div className="blog-image-wrap">
               <Image src={cardimg7} alt="" />
@@ -312,7 +314,7 @@ function Blog() {
             </div>
           </div>
         </div>
-        <div className="blog-card hover">
+        <div className="blog-card hover" onClick={() => setActiveBlog(8)}>
           <div className="blog-image-container">
             <div className="blog-image-wrap">
               <Image src={cardimg8} alt="" />
@@ -353,6 +355,11 @@ function Blog() {
           </div>
         </div>
       </div>
+
+      <BlogDetails
+        blogId={activeBlog}
+        setActiveBlog={(id: any) => setActiveBlog(id)}
+      />
     </div>
   );
 }

@@ -1,4 +1,5 @@
-import React from "react";
+"use client"
+import React, { useState } from "react";
 import "./events.scss";
 import PageSaperator from "@pageSaperator";
 import Image from "next/image";
@@ -10,8 +11,10 @@ import cardimg5 from "../../public/blog/cardimg5.jpg";
 import cardimg6 from "../../public/blog/cardimg6.jpg";
 import cardimg7 from "../../public/blog/cardimg7.jpg";
 import cardimg8 from "../../public/blog/cardimg8.jpg";
+import EventDetails from "./eventDetails";
 
 function Events() {
+  const [activeEvent, setActiveEvent] = useState(0)
   function BiMessageRoundedDetail() {
     return (
       <svg
@@ -41,7 +44,7 @@ function Events() {
       </div>
       <PageSaperator />
       <div className="blog-card-container">
-        <div className="blog-card hover">
+        <div className="blog-card hover" onClick={() => setActiveEvent(1)}>
           <div className="blog-image-container">
             <div className="blog-image-wrap">
               <Image src={cardimg1} alt="" />
@@ -70,7 +73,7 @@ function Events() {
             </div>
           </div>
         </div>
-        <div className="blog-card hover">
+        <div className="blog-card hover" onClick={() => setActiveEvent(2)}>
           <div className="blog-image-container">
             <div className="blog-image-wrap">
               <Image src={cardimg2} alt="" />
@@ -99,7 +102,7 @@ function Events() {
             </div>
           </div>
         </div>
-        <div className="blog-card hover">
+        <div className="blog-card hover" onClick={() => setActiveEvent(3)}>
           <div className="blog-image-container">
             <div className="blog-image-wrap">
               <Image src={cardimg3} alt="" />
@@ -128,7 +131,7 @@ function Events() {
             </div>
           </div>
         </div>
-        <div className="blog-card hover">
+        <div className="blog-card hover" onClick={() => setActiveEvent(4)}>
           <div className="blog-image-container">
             <div className="blog-image-wrap">
               <Image src={cardimg4} alt="" />
@@ -157,7 +160,7 @@ function Events() {
             </div>
           </div>
         </div>
-        <div className="blog-card hover">
+        <div className="blog-card hover" onClick={() => setActiveEvent(5)}>
           <div className="blog-image-container">
             <div className="blog-image-wrap">
               <Image src={cardimg5} alt="" />
@@ -186,7 +189,7 @@ function Events() {
             </div>
           </div>
         </div>
-        <div className="blog-card hover">
+        <div className="blog-card hover" onClick={() => setActiveEvent(6)}>
           <div className="blog-image-container">
             <div className="blog-image-wrap">
               <Image src={cardimg6} alt="" />
@@ -215,7 +218,7 @@ function Events() {
             </div>
           </div>
         </div>
-        <div className="blog-card hover">
+        <div className="blog-card hover" onClick={() => setActiveEvent(7)}>
           <div className="blog-image-container">
             <div className="blog-image-wrap">
               <Image src={cardimg7} alt="" />
@@ -244,7 +247,7 @@ function Events() {
             </div>
           </div>
         </div>
-        <div className="blog-card hover">
+        <div className="blog-card hover" onClick={() => setActiveEvent(8)}>
           <div className="blog-image-container">
             <div className="blog-image-wrap">
               <Image src={cardimg8} alt="" />
@@ -277,6 +280,7 @@ function Events() {
           </div>
         </div>
       </div>
+      <EventDetails eventId={activeEvent} setActiveEvent={(id: any) => setActiveEvent(id)} />
     </div>
   );
 }
