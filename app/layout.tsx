@@ -44,10 +44,10 @@ export default function RootLayout({
                 <Image
                   src={LOGO}
                   alt="Pioneer foundation"
-                  // width={500} automatically provided
-                  // height={500} automatically provided
-                  // blurDataURL="data:..." automatically provided
-                  // placeholder="blur" // Optional blur-up while loading
+                // width={500} automatically provided
+                // height={500} automatically provided
+                // blurDataURL="data:..." automatically provided
+                // placeholder="blur" // Optional blur-up while loading
                 />
               </Link>
               <div className="nav-item-wrap">

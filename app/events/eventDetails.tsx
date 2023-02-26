@@ -64,10 +64,10 @@ function EventDetails({ eventId, setActiveEvent }: any) {
   return (
     <div className={`events-details-wrapper ${eventId != 0 ? "active" : ""}`}>
       <div className="event-details">
-        <div
+        {eventId != 0 && <div
           className="close-icon d-f-c hover"
           onClick={() => setActiveEvent(0)}
-        ><IoMdClose /> </div>
+        ><IoMdClose /> </div>}
         <div className="event-details-sub-container">
           <div className="event-image-container">
             <Image src={Eventimg1} alt="" />
@@ -89,7 +89,7 @@ function EventDetails({ eventId, setActiveEvent }: any) {
             06 March 2023, 09:00 am, Seva Mahatirth Badi, Udaipur
           </div>
 
-          <div className="event-details-content">
+          <div className="width100">
             A secure livelihood helps people get out of poverty. While employability has always been a challenge for the under-privileged, the pandemic followed by job losses and massive pay-cuts further pushed them into destitution.
             <br />
             <br />

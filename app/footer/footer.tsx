@@ -1,7 +1,7 @@
 import React from "react";
 import "./footer.scss";
 import Image from "next/image";
-import LOGO from "../../public/footer/logo.png";
+import LOGO from "../../public/logo.png";
 
 function footer() {
   function FaFacebook() {
@@ -67,8 +67,8 @@ function footer() {
   function GrMail() {
     return (
       <svg
-        stroke="white"
-        fill="white"
+        stroke="#020c1b"
+        fill="#020c1b"
         strokeWidth={0}
         viewBox="0 0 24 24"
         height="1em"
@@ -85,8 +85,8 @@ function footer() {
   function ImPhone() {
     return (
       <svg
-        stroke="white"
-        fill="white"
+        stroke="#020c1b"
+        fill="#020c1b"
         strokeWidth={0}
         viewBox="0 0 16 16"
         height="1em"
@@ -100,8 +100,8 @@ function footer() {
   function AiFillHome() {
     return (
       <svg
-        stroke="white"
-        fill="white"
+        stroke="#020c1b"
+        fill="#020c1b"
         strokeWidth={0}
         viewBox="0 0 1024 1024"
         height="1em"
@@ -115,55 +115,6 @@ function footer() {
   return (
     <div className="footer-container">
       <div className="footer-main-container" id="contact">
-        <div className="footer-second-container">
-          <div className="footer-content-container">
-            <div className="footer-about-tag">About</div>
-            <div className="footer-content">
-              <div className="footer-content-row">About Us</div>
-              <div className="footer-content-row">Events</div>
-              <div className="footer-content-row">Blogs</div>
-              <div className="footer-content-row">Our Approach</div>
-              <div className="footer-content-row">Our Mission</div>
-            </div>
-          </div>
-        </div>
-        <div className="footer-third-container">
-          <div className="footer-content-container">
-            <div className="footer-content-tag">Contact Us</div>
-            <div className="footer-content">
-              <div className="contact-container">
-                <div className="contact-sub-container1">
-                  <div className="social-media-icon">
-                    <ImPhone />
-                  </div>
-                  <div className="social-media-icon">
-                    <AiFillHome />
-                  </div>
-                  <div className="social-media-icon">
-                    <GrMail />
-                  </div>
-                </div>
-                <div className="contact-sub-container2">
-                  <div className="contact-row">
-                    <div className="table-contact-data">7276303453</div>
-                  </div>
-                  <div className="contact-row">
-                    <div className="table-contact-data">
-                      Office No.35, C Wing, KK Market, Bibwewadi. Pune-411043.
-                    </div>
-                  </div>
-                  <div className="contact-row">
-                    <div className="table-contact-data">
-                      <a href="mailto:skyline@gmail.com">
-                        skyline.enterprises@gmail.com
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
         <div className="footer-first-container">
           <div className="footer-row">
             <div className="company-logo"></div>
@@ -194,6 +145,37 @@ function footer() {
                 <FaLinkedin />
               </div>
             </div>
+          </div>
+        </div>
+        <div className="footer-second-container">
+          <div className="heading">Quick Links</div>
+          <div className="footer-links-wrap">
+            <div className="link">Home</div>
+            <div className="link">About Us</div>
+            <div className="link">Events</div>
+            <div className="link">Events</div>
+            <div className="link">Blogs</div>
+            <div className="link">Privacy & Policy</div>
+          </div>
+        </div>
+        <div className="footer-third-container">
+          <div className="heading">Keep helping. Stay Updated.</div>
+          <div className="footer-links-wrap">
+            <div className="link">
+              <div className="icon-wrap">
+                <ImPhone />
+              </div>
+              7276303453</div>
+            <div className="link">
+              <div className="icon-wrap">
+                <AiFillHome />
+              </div>
+              pioneer-foundation@gmail.com</div>
+            <div className="link">
+              <div className="icon-wrap">
+                <GrMail />
+              </div>
+              Office No.35, C Wing, KK Market, Bibwewadi. Pune-411043.</div>
           </div>
         </div>
       </div>

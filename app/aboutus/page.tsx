@@ -81,8 +81,8 @@ function Aboutus() {
       </div>
       <PageSaperator />
 
-      <div className="content-sub-container">
-        <div className="content-wrap">
+      <div className="content-sub-container ">
+        <div className="content-wrap card">
           <div className="content-description">
             Manav Kartavya strongly believes that a better, more sustainable
             world will take shape when economically weaker communities will be
@@ -111,9 +111,9 @@ function Aboutus() {
             NGO for the basic protection and enhancement of lives of Gaumatas
             via Gaushalas.
           </div>
-        </div>
-        <div className="content-image-container">
-          <Image src={contentimg} alt="" />
+          <div className="content-image-container">
+            <Image src={contentimg} alt="" />
+          </div>
         </div>
       </div>
       <PageSaperator />

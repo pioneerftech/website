@@ -1,15 +1,15 @@
 .footer-container {
   .footer-main-container {
-    height: 400px;
+    height: auto;
     width: 100%;
-    background-color: var(--primary-color);
+    background: linear-gradient(180deg, #b0b6ff00, var(--primary-color) 140.2%);
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    padding: 0 2.5%;
-
+    justify-content: center;
+    padding: 20px 2.5%;
+    color: var(--dark-navy);
     .footer-first-container {
-      width: 30%;
+      width: auto;
       height: 100%;
       display: flex;
       align-items: center;
@@ -19,14 +19,13 @@
 
       .footer-row {
         width: 60%;
-        height: 80px;
         display: flex;
         align-items: center;
         justify-content: space-between;
 
         .title-container {
           width: 100%;
-          height: 100px;
+          height: auto;
           display: flex;
           justify-content: center;
           flex-direction: column;
@@ -45,14 +44,14 @@
           }
           .company-sub-title {
             font-size: 22px;
-            color: white;
+            color: var(--dark-navy);
             text-align: center;
           }
         }
 
         .company-description {
           font-size: 15px;
-          color: white;
+          color: var(--dark-navy);
           text-align: center;
           margin: 20px 0;
         }
@@ -82,30 +81,63 @@
     }
     .footer-second-container {
       width: 20%;
-      height: 100%;
       display: flex;
-      align-items: center;
-      justify-content: center;
-
-      .footer-content {
-        width: 50%;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-direction: column;
+      .heading {
+        color: var(--dark-navy);
+        text-align: left;
+        font-size: var(--fz-lg);
+      }
+      .footer-links-wrap {
+        .link {
+          color: var(--dark-navy);
+          font-size: var(--fz-lg);
+          &::after {
+            content: "";
+            height: 1px;
+            width: 100%;
+            background: #f2811e;
+          }
+        }
       }
     }
     .footer-third-container {
-      width: 30%;
-      height: 100%;
+      width: auto;
       display: flex;
-      align-items: center;
-      justify-content: center;
-      border-left: 2px dashed #f2811e;
-      border-right: 2px dashed #f2811e;
-      padding: 0 2.5%;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-direction: column;
+      .heading {
+        color: var(--dark-navy);
+        text-align: left;
+        font-size: var(--fz-lg);
+      }
+      .footer-links-wrap {
+        .link {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          color: var(--dark-navy);
+          gap: 10px;
+          margin-bottom: 25px;
+          .icon-wrap {
+            width: 30px;
+            height: 30px;
+            padding: 6px;
+            background: white;
+            svg {
+              color: var(--dark-navy);
+            }
+          }
+        }
+      }
     }
   }
 
   .footer-content-container {
     width: 100%;
-    height: 60%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -113,12 +145,10 @@
     .footer-content-tag {
       font-size: 25px;
       width: 95%;
-      height: 20%;
-      color: white;
+      color: var(--dark-navy);
       font-weight: 600;
     }
     .footer-content {
-      height: 80%;
       width: 100%;
       display: flex;
       align-items: center;
@@ -127,12 +157,11 @@
 
       .footer-content-row {
         width: 100%;
-        height: 50px;
         font-size: 18px;
         display: flex;
         align-items: center;
         justify-content: start;
-        color: white;
+        color: var(--dark-navy);
       }
     }
   }
@@ -144,7 +173,6 @@
   }
 
   .contact-sub-container2 {
-    height: 100%;
     width: 80%;
   }
   .contact-row {
@@ -160,7 +188,7 @@
       overflow: hidden;
       padding: 3% 3%;
       font-size: 18px;
-      color: white;
+      color: var(--dark-navy);
 
       a {
         width: 100%;
@@ -168,7 +196,7 @@
         align-items: center;
         overflow: hidden;
         font-size: 18px;
-        color: white;
+        color: var(--dark-navy);
         text-decoration: none;
       }
     }
@@ -195,8 +223,7 @@
   .footer-about-tag {
     font-size: 25px;
     width: 50%;
-    height: 20%;
-    color: white;
+    color: var(--dark-navy);
     font-weight: 600;
   }
 
