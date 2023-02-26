@@ -39,8 +39,10 @@
   z-index: 12;
   padding: 0px 50px;
   .logo {
-    width: 200px;
+    width: 215px;
     height: auto;
+    padding-left: 10px;
+
     img {
       width: 100%;
       height: 100%;
@@ -111,9 +113,9 @@
 
 .nav-item-wrap ul li .nav-item {
   padding: 10px;
-  font-size: 19px;
+  font-size: var(--fz-md);
   font-family: var(--font-Regular);
-  color: white;
+  color: var(--dark-navy);
   letter-spacing: 0.5px;
 }
 
@@ -556,7 +558,7 @@ body.blur #content > * {
     width: min(75vw, 400px);
     height: 100vh;
     outline: 0px;
-    background-color: #424244;
+    background-color: var(--dark-navy);
     box-shadow: -10px 0px 30px -15px var(--navy-shadow);
     z-index: 9;
     transform: translateX(0vw);

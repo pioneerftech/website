@@ -2,12 +2,13 @@
   .footer-main-container {
     height: auto;
     width: 100%;
-    background: linear-gradient(180deg, #b0b6ff00, var(--primary-color) 140.2%);
+    // background: linear-gradient(180deg, #b0b6ff00, var(--primary-color) 140.2%);
+    background: var(--dark-navy);
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px 2.5%;
-    color: var(--dark-navy);
+    padding: 2.5%;
+    color: white;
     .footer-first-container {
       width: auto;
       height: 100%;
@@ -30,6 +31,7 @@
           justify-content: center;
           flex-direction: column;
           overflow: hidden;
+          max-width: 300px;
 
           .company-title {
             font-size: 25px;
@@ -44,14 +46,14 @@
           }
           .company-sub-title {
             font-size: 22px;
-            color: var(--dark-navy);
+            color: white;
             text-align: center;
           }
         }
 
         .company-description {
           font-size: 15px;
-          color: var(--dark-navy);
+          color: white;
           text-align: center;
           margin: 20px 0;
         }
@@ -67,8 +69,9 @@
             height: 40px;
             width: 40px;
             margin: 1px;
-            border: 1px solid #f2811e;
+            border: 1px solid white;
             background-color: white;
+            color: var(--primary-color);
             border-radius: 50%;
 
             svg {
@@ -85,14 +88,16 @@
       align-items: flex-start;
       justify-content: flex-start;
       flex-direction: column;
+      margin-bottom: 10px;
       .heading {
-        color: var(--dark-navy);
+        color: #dee1ec;
         text-align: left;
         font-size: var(--fz-lg);
+        text-transform: uppercase;
       }
       .footer-links-wrap {
         .link {
-          color: var(--dark-navy);
+          color: white;
           font-size: var(--fz-lg);
           &::after {
             content: "";
@@ -110,16 +115,17 @@
       justify-content: flex-start;
       flex-direction: column;
       .heading {
-        color: var(--dark-navy);
+        color: #dee1ec;
         text-align: left;
         font-size: var(--fz-lg);
+        text-transform: uppercase;
       }
       .footer-links-wrap {
         .link {
           display: flex;
           justify-content: flex-start;
           align-items: center;
-          color: var(--dark-navy);
+          color: white;
           gap: 10px;
           margin-bottom: 25px;
           .icon-wrap {
@@ -128,7 +134,7 @@
             padding: 6px;
             background: white;
             svg {
-              color: var(--dark-navy);
+              color: white;
             }
           }
         }
@@ -145,7 +151,7 @@
     .footer-content-tag {
       font-size: 25px;
       width: 95%;
-      color: var(--dark-navy);
+      color: white;
       font-weight: 600;
     }
     .footer-content {
@@ -161,7 +167,7 @@
         display: flex;
         align-items: center;
         justify-content: start;
-        color: var(--dark-navy);
+        color: white;
       }
     }
   }
@@ -188,7 +194,7 @@
       overflow: hidden;
       padding: 3% 3%;
       font-size: 18px;
-      color: var(--dark-navy);
+      color: white;
 
       a {
         width: 100%;
@@ -196,7 +202,7 @@
         align-items: center;
         overflow: hidden;
         font-size: 18px;
-        color: var(--dark-navy);
+        color: white;
         text-decoration: none;
       }
     }
@@ -223,7 +229,7 @@
   .footer-about-tag {
     font-size: 25px;
     width: 50%;
-    color: var(--dark-navy);
+    color: white;
     font-weight: 600;
   }
 
@@ -238,15 +244,16 @@
       padding: 2.5%;
     }
     .footer-second-container {
+      border-top: 1px dashed rgb(151, 145, 145);
       width: 100% !important;
       border-left: none !important;
       border-right: none !important;
       padding: 2.5%;
+      margin-top: 20px;
     }
     .footer-third-container {
       width: 100% !important;
       border-top: 1px dashed rgb(151, 145, 145);
-      border-bottom: 1px dashed rgb(151, 145, 145);
       padding: 2.5%;
     }
     .social-icon-container {
