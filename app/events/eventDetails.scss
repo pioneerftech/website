@@ -28,15 +28,15 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
+    border-radius: 4px;
 
     .event-details-sub-container {
       height: 100%;
       width: 50%;
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       justify-content: flex-start;
       flex-direction: column;
-      gap: 40px;
       .event-image-container {
         height: 100%;
         width: 100%;
@@ -45,62 +45,38 @@
           width: 100%;
         }
       }
-      .hero-content {
-        z-index: 2;
-        letter-spacing: var(--letter-spacong-md);
-        padding: 20px;
-        .heading {
-          font-size: var(--fz-xxl);
-          letter-spacing: var(xl);
-          font-family: var(--font-Bold);
-          color: #323759;
-          text-align: left;
+      &.event-details-content {
+        padding: 10px;
+        .hero-content {
+          z-index: 2;
+          letter-spacing: var(--letter-spacong-md);
+          .heading {
+            font-size: var(--fz-md);
+            letter-spacing: var(xl);
+            font-family: var(--font-Bold);
+            color: #323759;
+            text-align: left;
+            padding-bottom: 5px;
+          }
+          .subheading {
+            font-size: var(--fz-sm);
+            line-height: 26px;
+            text-align: left;
+            margin-bottom: 5px;
+            color: var(--lightest-navy);
+          }
         }
-        .subheading {
-          font-size: var(--fz-md);
-          line-height: 30px;
-          text-align: left;
-          color: var(--lightest-navy);
-        }
-      }
-      .event-detail-list-wrap {
-        height: auto;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        flex-direction: column;
-        padding: 0 20px;
-        gap: 10px;
-        .event-detail-list-row {
-          height: 50px;
-          width: 100%;
+        .event-details-venue {
           display: flex;
           align-items: center;
           justify-content: flex-start;
-          gap: 20px;
-          .event-detail-icon-wrap {
-            height: 50px;
-            width: 50px;
-            padding: 15px;
-            border-radius: 50%;
-            background-color: black;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            svg {
-              height: 100%;
-              width: 100%;
-            }
-          }
-          .event-detail-content {
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            height: 100%;
-            width: 80%;
-          }
+          color: var(--slate);
+          font-size: var(--fz-sm);
+        }
+        .event-details-content {
+          overflow: auto;
+          font-size: var(--fz-sm);
+          letter-spacing: var(--letter-spacong-md);
         }
       }
     }

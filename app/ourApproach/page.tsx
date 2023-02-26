@@ -34,7 +34,7 @@ function ourApproach() {
       <PageSaperator />
 
       <div className="content-container">
-        <div className="content-sub-container">
+        <div className="content-sub-container card">
           <div className="content-wrap">
             <div className="step-tag">Step 01</div>
             <div className="content-tag">
@@ -54,7 +54,7 @@ function ourApproach() {
             <Image src={CONTENT1} alt="" />
           </div>
         </div>
-        <div className="content-sub-container">
+        <div className="content-sub-container card">
           <div className="content-image-container">
             <Image src={content2} alt="" />
           </div>
@@ -74,7 +74,7 @@ function ourApproach() {
             </div>
           </div>
         </div>
-        <div className="content-sub-container">
+        <div className="content-sub-container card">
           <div className="content-wrap">
             <div className="step-tag">Step 03</div>
             <div className="content-tag">
@@ -95,7 +95,7 @@ function ourApproach() {
             <Image src={content3} alt="" />
           </div>
         </div>
-        <div className="content-sub-container">
+        <div className="content-sub-container card">
           <div className="content-image-container">
             <Image src={content4} alt="" />
           </div>
@@ -116,7 +116,7 @@ function ourApproach() {
             </div>
           </div>
         </div>
-        <div className="content-sub-container">
+        <div className="content-sub-container card">
           <div className="content-wrap">
             <div className="step-tag">Step 05</div>
             <div className="content-tag">
@@ -137,7 +137,7 @@ function ourApproach() {
             <Image src={content5} alt="" />
           </div>
         </div>
-        <div className="content-sub-container">
+        <div className="content-sub-container card">
           <div className="content-image-container">
             <Image src={content6} alt="" />
           </div>
