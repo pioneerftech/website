@@ -11,10 +11,12 @@ import cardimg5 from "../../public/blog/cardimg5.jpg";
 import cardimg6 from "../../public/blog/cardimg6.jpg";
 import cardimg7 from "../../public/blog/cardimg7.jpg";
 import cardimg8 from "../../public/blog/cardimg8.jpg";
-import BlogDetails from "./blogDetails";
+import BlogDetails from "../blogDetailes/page";
+import Link from "next/link";
 
 function Blog() {
   const [activeBlog, setActiveBlog] = useState(0);
+
   function FaRegComments() {
     return (
       <svg
@@ -55,43 +57,46 @@ function Blog() {
       </div>
       <PageSaperator />
       <div className="blog-card-container">
-        <div className="blog-card hover" onClick={() => setActiveBlog(1)}>
-          <div className="blog-image-container">
-            <div className="blog-image-wrap">
-              <Image src={cardimg1} alt="" />
-            </div>
-            <div className="image-content-bg">
-              <div className="image-sub-tag">How</div>
-              <div className="image-tag">Old Age Home</div>
-              <div className="image-description">Are Changing To Better</div>
-              <div className="foundation-tag">PIONEER Foundation</div>
-            </div>
-          </div>
-          <div className="blog-content-container">
-            <div className="blog-date-depart-wrap">
-              21st February 2023 / <span>Old Age Home</span>
-            </div>
-            <div className="blog-content-tagline">
-              A Small Glimpse of How Old Age Homes are changing to Better
-            </div>
-          </div>
-          <div className="blog-comment-view-wraper">
-            <div className="blog-comment">
-              <div className="comment-view-logo">
-                <FaRegComments />
+        <div className="blog-card hover">
+          <Link href="/blog/old-age-home">
+            <div className="blog-image-container">
+              <div className="blog-image-wrap">
+                <Image src={cardimg1} alt="" />
               </div>
-              <div className="comment-view-count">0</div>
-              <div className="comment-view-tag">Comment</div>
-            </div>
-            <div className="blog-comment">
-              <div className="comment-view-logo">
-                <FaRegEye />
+              <div className="image-content-bg">
+                <div className="image-sub-tag">How</div>
+                <div className="image-tag">Old Age Home</div>
+                <div className="image-description">Are Changing To Better</div>
+                <div className="foundation-tag">PIONEER Foundation</div>
               </div>
-              <div className="comment-view-count">112</div>
-              <div className="comment-view-tag">Views</div>
             </div>
-          </div>
+            <div className="blog-content-container">
+              <div className="blog-date-depart-wrap">
+                21st February 2023 / <span>Old Age Home</span>
+              </div>
+              <div className="blog-content-tagline">
+                A Small Glimpse of How Old Age Homes are changing to Better
+              </div>
+            </div>
+            <div className="blog-comment-view-wraper">
+              <div className="blog-comment">
+                <div className="comment-view-logo">
+                  <FaRegComments />
+                </div>
+                <div className="comment-view-count">0</div>
+                <div className="comment-view-tag">Comment</div>
+              </div>
+              <div className="blog-comment">
+                <div className="comment-view-logo">
+                  <FaRegEye />
+                </div>
+                <div className="comment-view-count">112</div>
+                <div className="comment-view-tag">Views</div>
+              </div>
+            </div>
+          </Link>
         </div>
+
         <div className="blog-card hover" onClick={() => setActiveBlog(2)}>
           <div className="blog-image-container">
             <div className="blog-image-wrap">
