@@ -98,7 +98,9 @@
       .footer-links-wrap {
         .link {
           color: white;
-          font-size: var(--fz-lg);
+          font-size: var(--fz-sm);
+          margin-bottom: 5px;
+
           &::after {
             content: "";
             height: 1px;
@@ -127,6 +129,7 @@
           align-items: center;
           color: white;
           gap: 10px;
+          font-size: var(--fz-sm);
           margin-bottom: 25px;
           .icon-wrap {
             width: 30px;
