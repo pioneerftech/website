@@ -11,7 +11,6 @@ import cardimg5 from "../../public/blog/cardimg5.jpg";
 import cardimg6 from "../../public/blog/cardimg6.jpg";
 import cardimg7 from "../../public/blog/cardimg7.jpg";
 import cardimg8 from "../../public/blog/cardimg8.jpg";
-import BlogDetails from "../blogDetailes/page";
 import Link from "next/link";
 
 function Blog() {
@@ -360,11 +359,6 @@ function Blog() {
           </div>
         </div>
       </div>
-
-      <BlogDetails
-        blogId={activeBlog}
-        setActiveBlog={(id: any) => setActiveBlog(id)}
-      />
     </div>
   );
 }
