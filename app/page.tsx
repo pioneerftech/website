@@ -39,19 +39,12 @@ export default function Home() {
       <div className="content-wrap d-f-c">
         <div className="subheading">About Pioneer Foundation</div>
         <div className="heading">
-          Access to right food provides for exploring the world of
-          opportunities. Hence, serving food is not an end, but a means to an
-          end.
+          {/* The PIONEER EDUCATION & RESEARCH FOUNDATION is established to
+          promote education; agriculture, rural and youth development; welfare of child, women and family; to promote charity, social reforms of useful knowledge without any discrimination ofcaste, creed, language etc. */}
         </div>
         <div className="content">
-          We are a not-for-profit organisation that builds capacity of
-          communities to ensure empowerment for marginalised women and girls.
-          Our sustainable and holistic interventions in Health, Livelihood,
-          Education and Disaster Relief & Resilience, provide innovative
-          solutions to deep-rooted development problems. Along with access to
-          the international confederation of expertise, we integrate internal
-          knowledge and strong network of partnerships to deliver outcomes at
-          scale to varied stakeholders.
+          The PIONEER EDUCATION & RESEARCH FOUNDATION is established to
+          promote education; agriculture, rural and youth development; welfare of child, women and family; to promote charity, social reforms of useful knowledge without any discrimination ofcaste, creed, language etc.
         </div>
         <div className="read-more d-f-c">
           <div className=" hover-text">Read more...</div>
@@ -67,7 +60,7 @@ export default function Home() {
               <FaBookReader />
             </div>
             <div className="details-wrap">
-              <div className="heading">EDUCATION</div>
+              <div className="heading">EDUCATIONAL</div>
               <div className="desc">
                 Education, nutrition and holistic development of children
               </div>
@@ -78,7 +71,7 @@ export default function Home() {
               <FaBookReader />
             </div>
             <div className="details-wrap">
-              <div className="heading">HEALTHCARE</div>
+              <div className="heading">AGRICULTURALDEVELOPMENT& RESEARCH :</div>
               <div className="desc">
                 Taking healthcare services to doorsteps of hard to reach
                 communities{" "}
@@ -90,7 +83,7 @@ export default function Home() {
               <FaBookReader />
             </div>
             <div className="details-wrap">
-              <div className="heading">WOMEN EMPOWERMENT</div>
+              <div className="heading">RURALDEVELOPMENT &RESEARCH :</div>
               <div className="desc">
                 Empowering adolescent girls & women through community engagement{" "}
               </div>
@@ -101,7 +94,29 @@ export default function Home() {
               <FaBookReader />
             </div>
             <div className="details-wrap">
-              <div className="heading">Livelihood</div>
+              <div className="heading">WOMAN &FAMILY WELFARE ACTIVITIES -</div>
+              <div className="desc">
+                Skill training and placement support for underprivileged youth
+              </div>
+            </div>
+          </div>
+          <div className="field-wrap d-f-c hover card">
+            <div className="icon-wrap">
+              <FaBookReader />
+            </div>
+            <div className="details-wrap">
+              <div className="heading">YOUTH DEVELOPMENT ACTIVITIES -</div>
+              <div className="desc">
+                Skill training and placement support for underprivileged youth
+              </div>
+            </div>
+          </div>
+          <div className="field-wrap d-f-c hover card">
+            <div className="icon-wrap">
+              <FaBookReader />
+            </div>
+            <div className="details-wrap">
+              <div className="heading">HEALTHCARE</div>
               <div className="desc">
                 Skill training and placement support for underprivileged youth
               </div>
@@ -112,58 +127,14 @@ export default function Home() {
 
       <PageSaperator />
       <div className="content-wrap d-f-c">
-        <div className="subheading">Our Vision</div>
+        <div className="subheading">Our Vision & Mission</div>
         <div className="heading">
-          EMPTY STOMACHS DON’T HEAL. THEY ONLY GROWL.
+          promote education, agriculture, rural and youth development, welfare of child, women and family
         </div>
         <div className="content">
-          To open up a world of opportunities for every vulnerable by ensuring
-          food security.
+          The PIONEER EDUCATION & RESEARCH FOUNDATION is established to promote education; agriculture, rural and youth development; welfare of child, women and family; to promote charity, social reforms of useful knowledge without any discrimination ofcaste, creed, language etc.
         </div>
         {/* <div className='read-more d-f-c'><div className=' hover-text'>Read more...</div></div> */}
-      </div>
-
-      <PageSaperator />
-      <div className="content-wrap d-f-c">
-        <div className="subheading">Our Mission</div>
-        <div className="heading">
-          EMPTY STOMACHS DON’T HEAL. THEY ONLY GROWL.
-        </div>
-        <div className="content">
-          We shall provide food to one lakh beneficiaries everyday across
-          different vulnerable situations in Mumbai by 2025.
-        </div>
-        {/* <div className='read-more d-f-c'><div className=' hover-text'>Read more...</div></div> */}
-      </div>
-
-      <PageSaperator />
-      <div className="content-wrap d-f-c">
-        <div className="subheading">FEED TODAY FOR AN EMPOWERED TOMORROW</div>
-        <div className="heading">
-          You have a chance today to change someone’s future, just by providing
-          food. Don’t let it go.
-        </div>
-        <div className="content">
-          We shall provide food to one lakh beneficiaries everyday across
-          different vulnerable situations in Mumbai by 2025.
-        </div>
-      </div>
-
-      <PageSaperator />
-      <div className="content-wrap d-f-c">
-        <div className="subheading">THE INSPIRATION BEHIND OUR EXISTENCE</div>
-        <div className="heading">
-          Akshaya Chaitanya is an initiative with its roots in the compassionate
-          story of Srila Prabhupada.
-        </div>
-        <div className="content">
-          One day, while looking out of a window in Mayapur, a small hamlet near
-          Calcutta, Srila Prabhupada saw a group of children fighting with stray
-          dogs over scraps of food. Deeply moved by this incident, he resolved
-          to ensure that no one within a ten mile radius of his centre would go
-          hungry. This direction to his followers inspired the genesis of
-          various charitable feeding initiatives.
-        </div>
       </div>
 
       <PageSaperator />
