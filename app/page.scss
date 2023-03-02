@@ -1,4 +1,22 @@
 .home-page-container {
+  .parallax {
+    background-image: url("../public/home/banner.jpg");
+    min-height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    &::after {
+      content: "";
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
   .image-container {
     height: 100vh;
     width: 100%;
@@ -21,7 +39,6 @@
       height: 100%;
       width: 100%;
       background-color: var(--primary-tint);
-      //   z-index: -1;
     }
   }
   .hero-content {
@@ -45,21 +62,59 @@
     .sub-heading {
     }
     .heading {
+      padding: 30px 0;
     }
     .content {
-      font-size: var(--fz-lg);
+      font-size: var(--fz-sm);
       line-height: 30px;
       padding: 10px;
     }
     &.fields-content-wrap {
       .content {
-        gap: 30px;
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 50px;
+
         .field-wrap {
           flex-direction: column;
-          padding: 10px;
+          height: 250px;
+          width: 300px;
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          box-shadow: 0 7px 29px 0 hsl(240deg 5% 41% / 20%);
+          padding: 20px;
+          border-radius: 10px;
+
+          .heading {
+            font-size: var(--fz-sm);
+            letter-spacing: var(xl);
+          }
         }
         .icon-wrap {
-          background: unset;
+          height: 100px;
+          width: 100px;
+          background-color: hsla(161, 65%, 72%, 1);
+          background-image: radial-gradient(
+              at 1% 2%,
+              hsla(229, 66%, 53%, 1) 0px,
+              transparent 50%
+            ),
+            radial-gradient(
+              at 96% 94%,
+              hsla(155, 66%, 53%, 1) 0px,
+              transparent 50%
+            );
+          border-radius: 86% 14% 19% 81% / 62% 25% 75% 38%;
+          padding: 10px;
+          img {
+            height: 100%;
+            width: 100%;
+          }
         }
       }
     }
@@ -68,6 +123,7 @@
     width: 100%;
     color: var(--primary-color);
   }
+
   @media (max-width: 720px) {
     .content-wrap {
       .content {

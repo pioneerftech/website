@@ -3,6 +3,12 @@ import Image from "next/image";
 import { Inter } from "@next/font/google";
 import "./page.scss";
 import PageSaperator from "@pageSaperator";
+import Cardicon1 from "../public/home/icon/education.png";
+import Cardicon2 from "../public/home/icon/agriculture.png";
+import Cardicon3 from "../public/home/icon/ruraldev.png";
+import Cardicon4 from "../public/home/icon/womenandfamily.png";
+import Cardicon5 from "../public/home/icon/youthdev.png";
+import Cardicon6 from "../public/home/icon/healthcare.png";
 
 function FaBookReader(props: any) {
   return (
@@ -37,14 +43,13 @@ export default function Home() {
 
       <PageSaperator />
       <div className="content-wrap d-f-c">
-        <div className="subheading">About Pioneer Foundation</div>
-        <div className="heading">
-          {/* The PIONEER EDUCATION & RESEARCH FOUNDATION is established to
-          promote education; agriculture, rural and youth development; welfare of child, women and family; to promote charity, social reforms of useful knowledge without any discrimination ofcaste, creed, language etc. */}
-        </div>
+        <div className="subheading">About</div>
+        <div className="heading">About Pioneer Foundation</div>
         <div className="content">
-          The PIONEER EDUCATION & RESEARCH FOUNDATION is established to
-          promote education; agriculture, rural and youth development; welfare of child, women and family; to promote charity, social reforms of useful knowledge without any discrimination ofcaste, creed, language etc.
+          The PIONEER EDUCATION & RESEARCH FOUNDATION is established to promote
+          education; agriculture, rural and youth development; welfare of child,
+          women and family; to promote charity, social reforms of useful
+          knowledge without any discrimination ofcaste, creed, language etc.
         </div>
         <div className="read-more d-f-c">
           <div className=" hover-text">Read more...</div>
@@ -55,86 +60,70 @@ export default function Home() {
       <div className="content-wrap fields-content-wrap d-f-c">
         <div className="heading">Our Work Areas</div>
         <div className="content d-f-c gap-10">
-          <div className="field-wrap d-f-c hover card">
+          <div className="field-wrap d-f-c">
             <div className="icon-wrap">
-              <FaBookReader />
+              <Image src={Cardicon1} alt="" />
             </div>
             <div className="details-wrap">
               <div className="heading">EDUCATIONAL</div>
-              <div className="desc">
-                Education, nutrition and holistic development of children
-              </div>
             </div>
           </div>
-          <div className="field-wrap d-f-c hover card">
+          <div className="field-wrap d-f-c">
             <div className="icon-wrap">
-              <FaBookReader />
+              <Image src={Cardicon2} alt="" />
             </div>
             <div className="details-wrap">
-              <div className="heading">AGRICULTURALDEVELOPMENT& RESEARCH :</div>
-              <div className="desc">
-                Taking healthcare services to doorsteps of hard to reach
-                communities{" "}
-              </div>
+              <div className="heading">AGRICULTURA LDEVELOPMENT & RESEARCH</div>
             </div>
           </div>
-          <div className="field-wrap d-f-c hover card">
+          <div className="field-wrap d-f-c">
             <div className="icon-wrap">
-              <FaBookReader />
+              <Image src={Cardicon3} alt="" />
             </div>
             <div className="details-wrap">
-              <div className="heading">RURALDEVELOPMENT &RESEARCH :</div>
-              <div className="desc">
-                Empowering adolescent girls & women through community engagement{" "}
-              </div>
+              <div className="heading">RURAL DEVELOPMENT & RESEARCH</div>
             </div>
           </div>
-          <div className="field-wrap d-f-c hover card">
+          <div className="field-wrap d-f-c">
             <div className="icon-wrap">
-              <FaBookReader />
+              <Image src={Cardicon4} alt="" />
             </div>
             <div className="details-wrap">
-              <div className="heading">WOMAN &FAMILY WELFARE ACTIVITIES -</div>
-              <div className="desc">
-                Skill training and placement support for underprivileged youth
-              </div>
+              <div className="heading">WOMAN &FAMILY WELFARE ACTIVITIES</div>
             </div>
           </div>
-          <div className="field-wrap d-f-c hover card">
+          <div className="field-wrap d-f-c">
             <div className="icon-wrap">
-              <FaBookReader />
+              <Image src={Cardicon5} alt="" />
             </div>
             <div className="details-wrap">
-              <div className="heading">YOUTH DEVELOPMENT ACTIVITIES -</div>
-              <div className="desc">
-                Skill training and placement support for underprivileged youth
-              </div>
+              <div className="heading">YOUTH DEVELOPMENT ACTIVITIES</div>
             </div>
           </div>
-          <div className="field-wrap d-f-c hover card">
+          <div className="field-wrap d-f-c">
             <div className="icon-wrap">
-              <FaBookReader />
+              <Image src={Cardicon6} alt="" />
             </div>
             <div className="details-wrap">
               <div className="heading">HEALTHCARE</div>
-              <div className="desc">
-                Skill training and placement support for underprivileged youth
-              </div>
             </div>
           </div>
         </div>
       </div>
 
       <PageSaperator />
-      <div className="content-wrap d-f-c">
+      <div className="content-wrap d-f-c parallax">
         <div className="subheading">Our Vision & Mission</div>
         <div className="heading">
-          promote education, agriculture, rural and youth development, welfare of child, women and family
+          promote education, agriculture, rural and youth development, welfare
+          of child, women and family
         </div>
         <div className="content">
-          The PIONEER EDUCATION & RESEARCH FOUNDATION is established to promote education; agriculture, rural and youth development; welfare of child, women and family; to promote charity, social reforms of useful knowledge without any discrimination ofcaste, creed, language etc.
+          The PIONEER EDUCATION & RESEARCH FOUNDATION is established to promote
+          education; agriculture, rural and youth development; welfare of child,
+          women and family; to promote charity, social reforms of useful
+          knowledge without any discrimination ofcaste, creed, language etc.
         </div>
-        {/* <div className='read-more d-f-c'><div className=' hover-text'>Read more...</div></div> */}
       </div>
 
       <PageSaperator />

@@ -55,7 +55,6 @@ function Aboutus() {
           </div>
           <div className="card-content-tag">Our Vision</div>
           <div className="card-content-sub-tag">
-            {" "}
             We seek to build ‘The Advantaged Society’ by helping disadvantaged.
             We help disadvantaged by enhancing child education, eradicating
             poverty, by empowering women, by disseminating happiness in old-age
@@ -82,7 +81,7 @@ function Aboutus() {
       <PageSaperator />
 
       <div className="content-sub-container ">
-        <div className="content-wrap card">
+        <div className="content-wrap">
           <div className="content-description">
             Manav Kartavya strongly believes that a better, more sustainable
             world will take shape when economically weaker communities will be
