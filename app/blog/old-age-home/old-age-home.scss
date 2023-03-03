@@ -53,4 +53,18 @@
     padding: 20px;
     background-color: black;
   }
+  @media (max-width: 720px) {
+    .blog-details-wraper {
+      flex-direction: column;
+      padding: 20px;
+      .blog-image-container {
+        width: 100%;
+        margin-top: 200px;
+      }
+      .blog-heading-container {
+        width: 100%;
+        height: unset;
+      }
+    }
+  }
 }
