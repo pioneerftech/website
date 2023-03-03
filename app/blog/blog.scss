@@ -79,15 +79,14 @@
         // border: dashed 1px black;
 
         .image-content-bg {
-          float: right;
-          height: 80%;
+          height: 150px;
           width: 70%;
           background-color: var(--primary-color);
           display: flex;
           align-items: start;
-          justify-content: center;
+          justify-content: space-evenly;
           flex-direction: column;
-          padding: 0px 10px 0px 50px;
+          padding: 5px 10px 5px 50px;
           border-radius: 5px;
           .image-tag {
             font-size: var(--fz-l);

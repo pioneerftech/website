@@ -73,6 +73,13 @@
             background-color: white;
             color: var(--primary-color);
             border-radius: 50%;
+            cursor: pointer;
+            &:hover {
+              scale: 1.1;
+              color: white;
+              background-color: transparent;
+              transition: all ease-in-out 0.2s;
+            }
 
             svg {
               height: 100%;
@@ -100,6 +107,7 @@
           color: white;
           font-size: var(--fz-sm);
           margin-bottom: 5px;
+          cursor: pointer;
 
           &::after {
             content: "";

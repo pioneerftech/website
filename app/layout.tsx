@@ -7,7 +7,7 @@ import Image from "next/image";
 import LOGO from "../public/logo.png";
 import Footer from "@footer/footer";
 import PageSaperator from "@pageSaperator";
-import { usePathname } from 'next/navigation'
+import { usePathname } from "next/navigation";
 
 export default function RootLayout({
   children,
@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
   const pathname = usePathname();
   const [mobileNavActive, setmobileNavActive] = useState(false);
-  const [activeNav, setActiveNav] = useState<any>('/');
+  const [activeNav, setActiveNav] = useState<any>("/");
 
   const onNavLinkClick = (event: any) => {
     setmobileNavActive(false);
@@ -32,9 +32,9 @@ export default function RootLayout({
   };
 
   useEffect(() => {
-    setActiveNav(pathname)
-    console.log(pathname)
-  }, [pathname])
+    setActiveNav(pathname);
+    console.log(pathname);
+  }, [pathname]);
 
   return (
     <html lang="en">
@@ -43,7 +43,8 @@ export default function RootLayout({
         <div className="app-contanier">
           <header id="header" className="navigation-ourter-wrap">
             <div className="inner-wrap">
-              <Link shallow={true}
+              <Link
+                shallow={true}
                 onClick={(event) => {
                   onNavLinkClick(event);
                 }}
@@ -53,16 +54,21 @@ export default function RootLayout({
                 <Image
                   src={LOGO}
                   alt="Pioneer foundation"
-                // width={500} automatically provided
-                // height={500} automatically provided
-                // blurDataURL="data:..." automatically provided
-                // placeholder="blur" // Optional blur-up while loading
+                  // width={500} automatically provided
+                  // height={500} automatically provided
+                  // blurDataURL="data:..." automatically provided
+                  // placeholder="blur" // Optional blur-up while loading
                 />
               </Link>
               <div className="nav-item-wrap">
                 <ul>
-                  <li className={`fadedown-enter-done ${activeNav == '/' ? 'active' : ''}`}>
-                    <Link shallow={true}
+                  <li
+                    className={`fadedown-enter-done ${
+                      activeNav == "/" ? "active" : ""
+                    }`}
+                  >
+                    <Link
+                      shallow={true}
                       onClick={(event) => {
                         onNavLinkClick(event);
                       }}
@@ -72,8 +78,13 @@ export default function RootLayout({
                       Home
                     </Link>
                   </li>
-                  <li className={`fadedown-enter-done ${activeNav == '/ourApproach' ? 'active' : ''}`}>
-                    <Link shallow={true}
+                  <li
+                    className={`fadedown-enter-done ${
+                      activeNav == "/ourApproach" ? "active" : ""
+                    }`}
+                  >
+                    <Link
+                      shallow={true}
                       onClick={(event) => {
                         onNavLinkClick(event);
                       }}
@@ -83,8 +94,13 @@ export default function RootLayout({
                       Our Approach
                     </Link>
                   </li>
-                  <li className={`fadedown-enter-done ${activeNav == '/aboutus' ? 'active' : ''}`}>
-                    <Link shallow={true}
+                  <li
+                    className={`fadedown-enter-done ${
+                      activeNav == "/aboutus" ? "active" : ""
+                    }`}
+                  >
+                    <Link
+                      shallow={true}
                       onClick={(event) => {
                         onNavLinkClick(event);
                       }}
@@ -94,8 +110,13 @@ export default function RootLayout({
                       About
                     </Link>
                   </li>
-                  <li className={`fadedown-enter-done ${activeNav == '/gallery' ? 'active' : ''}`}>
-                    <Link shallow={true}
+                  <li
+                    className={`fadedown-enter-done ${
+                      activeNav == "/gallery" ? "active" : ""
+                    }`}
+                  >
+                    <Link
+                      shallow={true}
                       onClick={(event) => {
                         onNavLinkClick(event);
                       }}
@@ -105,8 +126,13 @@ export default function RootLayout({
                       Gallery
                     </Link>
                   </li>
-                  <li className={`fadedown-enter-done ${activeNav == '/events' ? 'active' : ''}`}>
-                    <Link shallow={true}
+                  <li
+                    className={`fadedown-enter-done ${
+                      activeNav == "/events" ? "active" : ""
+                    }`}
+                  >
+                    <Link
+                      shallow={true}
                       onClick={(event) => {
                         onNavLinkClick(event);
                       }}
@@ -116,8 +142,13 @@ export default function RootLayout({
                       Events
                     </Link>
                   </li>
-                  <li className={`fadedown-enter-done ${activeNav == '/blog' ? 'active' : ''}`}>
-                    <Link shallow={true}
+                  <li
+                    className={`fadedown-enter-done ${
+                      activeNav == "/blog" ? "active" : ""
+                    }`}
+                  >
+                    <Link
+                      shallow={true}
                       onClick={(event) => {
                         onNavLinkClick(event);
                       }}
@@ -127,8 +158,13 @@ export default function RootLayout({
                       Blog
                     </Link>
                   </li>
-                  <li className={`fadedown-enter-done ${activeNav == '/contactus' ? 'active' : ''}`}>
-                    <Link shallow={true}
+                  <li
+                    className={`fadedown-enter-done ${
+                      activeNav == "/contactus" ? "active" : ""
+                    }`}
+                  >
+                    <Link
+                      shallow={true}
                       onClick={(event) => {
                         onNavLinkClick(event);
                       }}
@@ -165,8 +201,13 @@ export default function RootLayout({
                   >
                     <nav>
                       <ul>
-                        <li className={`fadedown-enter-done ${activeNav == '/' ? 'active' : ''}`}>
-                          <Link shallow={true}
+                        <li
+                          className={`fadedown-enter-done ${
+                            activeNav == "/" ? "active" : ""
+                          }`}
+                        >
+                          <Link
+                            shallow={true}
                             onClick={(event) => {
                               onNavLinkClick(event);
                             }}
@@ -176,8 +217,13 @@ export default function RootLayout({
                             Home
                           </Link>
                         </li>
-                        <li className={`fadedown-enter-done ${activeNav == '/ourApproach' ? 'active' : ''}`}>
-                          <Link shallow={true}
+                        <li
+                          className={`fadedown-enter-done ${
+                            activeNav == "/ourApproach" ? "active" : ""
+                          }`}
+                        >
+                          <Link
+                            shallow={true}
                             onClick={(event) => {
                               onNavLinkClick(event);
                             }}
@@ -187,8 +233,13 @@ export default function RootLayout({
                             Our Approach
                           </Link>
                         </li>
-                        <li className={`fadedown-enter-done ${activeNav == '/aboutus' ? 'active' : ''}`}>
-                          <Link shallow={true}
+                        <li
+                          className={`fadedown-enter-done ${
+                            activeNav == "/aboutus" ? "active" : ""
+                          }`}
+                        >
+                          <Link
+                            shallow={true}
                             onClick={(event) => {
                               onNavLinkClick(event);
                             }}
@@ -198,8 +249,13 @@ export default function RootLayout({
                             About
                           </Link>
                         </li>
-                        <li className={`fadedown-enter-done ${activeNav == '/gallery' ? 'active' : ''}`}>
-                          <Link shallow={true}
+                        <li
+                          className={`fadedown-enter-done ${
+                            activeNav == "/gallery" ? "active" : ""
+                          }`}
+                        >
+                          <Link
+                            shallow={true}
                             onClick={(event) => {
                               onNavLinkClick(event);
                             }}
@@ -209,8 +265,13 @@ export default function RootLayout({
                             Gallery
                           </Link>
                         </li>
-                        <li className={`fadedown-enter-done ${activeNav == '/events' ? 'active' : ''}`}>
-                          <Link shallow={true}
+                        <li
+                          className={`fadedown-enter-done ${
+                            activeNav == "/events" ? "active" : ""
+                          }`}
+                        >
+                          <Link
+                            shallow={true}
                             onClick={(event) => {
                               onNavLinkClick(event);
                             }}
@@ -220,8 +281,13 @@ export default function RootLayout({
                             Events
                           </Link>
                         </li>
-                        <li className={`fadedown-enter-done ${activeNav == '/blog' ? 'active' : ''}`}>
-                          <Link shallow={true}
+                        <li
+                          className={`fadedown-enter-done ${
+                            activeNav == "/blog" ? "active" : ""
+                          }`}
+                        >
+                          <Link
+                            shallow={true}
                             onClick={(event) => {
                               onNavLinkClick(event);
                             }}
@@ -231,8 +297,13 @@ export default function RootLayout({
                             Blog
                           </Link>
                         </li>
-                        <li className={`fadedown-enter-done ${activeNav == '/contactus' ? 'active' : ''}`}>
-                          <Link shallow={true}
+                        <li
+                          className={`fadedown-enter-done ${
+                            activeNav == "/contactus" ? "active" : ""
+                          }`}
+                        >
+                          <Link
+                            shallow={true}
                             onClick={(event) => {
                               onNavLinkClick(event);
                             }}
