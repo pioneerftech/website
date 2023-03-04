@@ -2,6 +2,7 @@ import React from "react";
 import "./eventDetails.scss";
 import Image from "next/image";
 import Eventimg1 from "../../public/event/event1.jpg";
+import PageSaperator from "@pageSaperator";
 
 function EventDetails({ eventId, setActiveEvent }: any) {
   function IoMdClose(props: any) {
@@ -28,7 +29,7 @@ function EventDetails({ eventId, setActiveEvent }: any) {
             className="close-icon d-f-c hover"
             onClick={() => setActiveEvent(0)}
           >
-            <IoMdClose />{" "}
+            <IoMdClose />
           </div>
         )}
         <div className="event-details-sub-container">
@@ -38,48 +39,62 @@ function EventDetails({ eventId, setActiveEvent }: any) {
         </div>
         <div className="event-details-sub-container event-details-content">
           <div className="hero-content f-d-col d-f-c">
-            <div className="heading">
-              A Small Glimpse of How Old Age Homes are changing to Better
-            </div>
+            <div className="heading">#PioneerCompetitiveExam2023</div>
+            <br />
             <div className="subheading">
-              Old age homes are transforming into vibrant communities where
-              seniors can thrive. With a focus on wellness, social engagement,
-              and personalized care, these facilities are redefining what it
-              means to age gracefully.
+              The Pioneer Foundation organized a competitive exam for students
+              from grades 6 to 12 in the local community on 2nd March 2023. Over
+              200 students from different schools participated in the exam,
+              which covered various topics such as mathematics, science, social
+              studies, and English. The exam was conducted in an organized and
+              fair manner Overall, the event was a great success and a valuable
+              experience for the participating students.
             </div>
           </div>
           <div className="event-details-venue">
-            06 March 2023, 09:00 am, Seva Mahatirth Badi, Udaipur
+            2nd March 2023, 09:00 am, Qwality Circle Comunity Center,
+            Khairaw.Jat.
           </div>
-
+          <div className="center">
+            <PageSaperator />
+          </div>
           <div className="width100">
-            A secure livelihood helps people get out of poverty. While
-            employability has always been a challenge for the under-privileged,
-            the pandemic followed by job losses and massive pay-cuts further
-            pushed them into destitution.
+            We would be happy to write an event on a competitive exam that was
+            organized by an Pioneer Foundation. On 2nd March 2023, the Pioneer
+            Foundation organized a competitive exam for students in the local
+            community. The exam was held at the community center and aimed to
+            provide students with an opportunity to showcase their knowledge and
+            skills. <br />
+            <br />
+            The exam was open to all students from grades 6 to 12, and the
+            topics covered included mathematics, science, social studies, and
+            English. The exam was divided into two parts, with the first part
+            consisting of multiple-choice questions and the second part
+            comprising of short-answer questions. <br />
+            <br />
+            Over 200 students from different schools in the community
+            participated in the exam. The students arrived at the community
+            center early in the morning and were welcomed by volunteers from the
+            Pioneer Foundation who helped them to register and provided them
+            with refreshments.
             <br />
             <br />
-            Data from the Centre for Monitoring Indian Economy indicates that
-            over 40 million people lost their jobs just in the Covid-19 crisis.
-            The effect of the pandemic on the livelihoods of people belonging to
-            the lesser privileged sections has been profound and long lasting.
+            The exam was conducted in a peaceful and organized manner, and the
+            students had a positive experience. The Pioneer Foundation ensured
+            that the exam was fair, transparent, and without any discrimination.
+            The exam results were announced a week later, and the top-performing
+            students were awarded prizes and certificates of achievement.
             <br />
-            <br />
-            Smile Foundation, recognizing the need of the hour has reprogrammed
-            its employability training initiative 'STeP' to fight the challenges
-            posed by poverty and unemployment. Our campaign ‘Tayyari Kal Ki’
-            aims at Training & Up-skilling the youth between the age of 18-32
-            years for employment and empowering them with a secure livelihood.
-            <br />
-            <br />
-            This livelihood mission is in strong alignment with the Government
-            of India’s ‘Skill India’ initiative. Currently, the programme is
-            operational through 81 centres across 18 cities in 16 states. In the
-            last 15 years, Smile Foundation has trained over 65,000 youth, and
-            placed more than 45,000 of them in over 350 brands across India.
-            Donate now to support skill training, employment and a dignified
-            livelihood for underprivileged youth. Give them and their families a
-            chance to step above the poverty line!
+            <br /> The Pioneer's aim of organizing this competitive exam was to
+            promote education in the community and provide students with an
+            opportunity to showcase their knowledge and skills. The Pioneer
+            Foundation hopes that such events will encourage students to work
+            hard and strive for academic excellence. <br />
+            <br /> Overall, the competitive exam organized by the Pioneer was a
+            great success and a valuable experience for the participating
+            students. The Pioneer Foundation hopes to continue organizing such
+            events in the future and make education more accessible and
+            enjoyable for the community.
           </div>
         </div>
       </div>

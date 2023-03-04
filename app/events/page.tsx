@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 import "./events.scss";
 import PageSaperator from "@pageSaperator";
@@ -14,7 +14,7 @@ import cardimg8 from "../../public/blog/cardimg8.jpg";
 import EventDetails from "./eventDetails";
 
 function Events() {
-  const [activeEvent, setActiveEvent] = useState(0)
+  const [activeEvent, setActiveEvent] = useState(0);
   function BiMessageRoundedDetail() {
     return (
       <svg
@@ -51,7 +51,7 @@ function Events() {
             </div>
             <div className="image-content-bg">
               <div className="image-sub-tag">How</div>
-              <div className="image-tag">Old Age Home</div>
+              <div className="image-tag">Competitive Exams</div>
               <div className="image-description">Are Changing To Better</div>
               <div className="foundation-tag">PIONEER Foundation</div>
             </div>
@@ -280,7 +280,10 @@ function Events() {
           </div>
         </div>
       </div>
-      <EventDetails eventId={activeEvent} setActiveEvent={(id: any) => setActiveEvent(id)} />
+      <EventDetails
+        eventId={activeEvent}
+        setActiveEvent={(id: any) => setActiveEvent(id)}
+      />
     </div>
   );
 }

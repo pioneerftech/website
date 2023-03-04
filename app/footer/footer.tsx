@@ -122,7 +122,6 @@ function footer() {
               <div className="company-title">
                 <Image src={LOGO} alt="Pioneer foundation" />
               </div>
-              {/* <div className="company-sub-title">enterprises</div> */}
             </div>
           </div>
           <div className="footer-row">
@@ -132,18 +131,26 @@ function footer() {
           </div>
           <div className="footer-row">
             <div className="social-icon-container">
-              <div className="social-icon ">
-                <FaFacebook />
-              </div>
-              <div className="social-icon ">
-                <FaInstagram />
-              </div>
-              <div className="social-icon ">
-                <FaTwitter />
-              </div>
-              <div className="social-icon ">
-                <FaLinkedin />
-              </div>
+              <a href="https://www.facebook.com/profile.php?id=100089961057044&mibextid=ZbWKwL">
+                <div className="social-icon ">
+                  <FaFacebook />
+                </div>
+              </a>
+              <a href="https://instagram.com/pioneer__foundation?igshid=ZDdkNTZiNTM=">
+                <div className="social-icon ">
+                  <FaInstagram />
+                </div>
+              </a>
+              <a href="https://twitter.com/PoineerOrg?t=VlpGIv2ujW-xWPVijNjEhQ&s=08">
+                <div className="social-icon ">
+                  <FaTwitter />
+                </div>
+              </a>
+              {/* <a href="">
+                <div className="social-icon ">
+                  <FaLinkedin />
+                </div>
+              </a> */}
             </div>
           </div>
         </div>
@@ -165,17 +172,20 @@ function footer() {
               <div className="icon-wrap">
                 <ImPhone />
               </div>
-              7276303453</div>
+              7276303453
+            </div>
             <div className="link">
               <div className="icon-wrap">
                 <AiFillHome />
               </div>
-              pioneer-foundation@gmail.com</div>
+              pioneer-foundation@gmail.com
+            </div>
             <div className="link">
               <div className="icon-wrap">
                 <GrMail />
               </div>
-              Office No.35, C Wing, KK Market, Bibwewadi. Pune-411043.</div>
+              Office No.35, C Wing, KK Market, Bibwewadi. Pune-411043.
+            </div>
           </div>
         </div>
       </div>
