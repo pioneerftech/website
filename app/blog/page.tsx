@@ -96,43 +96,46 @@ function Blog() {
           </Link>
         </div>
 
-        <div className="blog-card hover" onClick={() => setActiveBlog(2)}>
-          <div className="blog-image-container">
-            <div className="blog-image-wrap">
-              <Image src={cardimg2} alt="" />
-            </div>
-            <div className="image-content-bg">
-              <div className="image-sub-tag">How To</div>
-              <div className="image-tag">Senior Citizens</div>
-              <div className="image-description">Can Overcome From Stress</div>
-              <div className="foundation-tag">PIONEER Foundation</div>
-            </div>
-          </div>
-          <div className="blog-content-container">
-            <div className="blog-date-depart-wrap">
-              21st February 2023 / <span>Old Age Home</span>
-            </div>
-            <div className="blog-content-tagline">
-              How can Senior Citizens Overcome Stress
-            </div>
-          </div>
-          <div className="blog-comment-view-wraper">
-            <div className="blog-comment">
-              <div className="comment-view-logo">
-                <FaRegComments />
+        <div className="blog-card hover">
+          <Link href="/blog/blog2">
+            <div className="blog-image-container">
+              <div className="blog-image-wrap">
+                <Image src={cardimg2} alt="" />
               </div>
-              <div className="comment-view-count">0</div>
-              <div className="comment-view-tag">Comment</div>
-            </div>
-            <div className="blog-comment">
-              <div className="comment-view-logo">
-                <FaRegEye />
+              <div className="image-content-bg">
+                <div className="image-sub-tag">How To</div>
+                <div className="image-tag">Senior Citizens</div>
+                <div className="image-description">Can Overcome From Stress</div>
+                <div className="foundation-tag">PIONEER Foundation</div>
               </div>
-              <div className="comment-view-count">112</div>
-              <div className="comment-view-tag">Views</div>
             </div>
-          </div>
+            <div className="blog-content-container">
+              <div className="blog-date-depart-wrap">
+                21st February 2023 / <span>Old Age Home</span>
+              </div>
+              <div className="blog-content-tagline">
+                How can Senior Citizens Overcome Stress
+              </div>
+            </div>
+            <div className="blog-comment-view-wraper">
+              <div className="blog-comment">
+                <div className="comment-view-logo">
+                  <FaRegComments />
+                </div>
+                <div className="comment-view-count">0</div>
+                <div className="comment-view-tag">Comment</div>
+              </div>
+              <div className="blog-comment">
+                <div className="comment-view-logo">
+                  <FaRegEye />
+                </div>
+                <div className="comment-view-count">112</div>
+                <div className="comment-view-tag">Views</div>
+              </div>
+            </div>
+          </Link>
         </div>
+
         <div className="blog-card hover" onClick={() => setActiveBlog(3)}>
           <div className="blog-image-container">
             <div className="blog-image-wrap">

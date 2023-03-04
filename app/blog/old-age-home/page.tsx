@@ -1,8 +1,7 @@
 import React from "react";
-import "./old-age-home.scss";
 import Image from "next/image";
 import Blogimg1 from "/public/blog/blog1.jpg";
-import PageSaperator from "@pageSaperator";
+import '../blog-details.scss'
 
 function page() {
   return (
