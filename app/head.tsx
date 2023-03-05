@@ -11,6 +11,9 @@ export default function Head() {
       <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
       <meta name="theme-color" content="#067cc3" />
       <link rel="manifest" href="/manifest.json" />
+      <meta property="og:image" content="/logo.png" />
+      <meta property="image" content="/logo.png" />
+
     </>
   )
 }
