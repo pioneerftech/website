@@ -26,6 +26,7 @@ export default function RootLayout({
       element.style.top = "0";
     }, 1000);
   };
+
   const navClick = (status: any) => {
     setmobileNavActive(status);
     !status && document.body.classList.remove("blur");
@@ -51,14 +52,7 @@ export default function RootLayout({
                 className="logo"
                 href="/"
               >
-                <Image
-                  src={LOGO}
-                  alt="Pioneer foundation"
-                  // width={500} automatically provided
-                  // height={500} automatically provided
-                  // blurDataURL="data:..." automatically provided
-                  // placeholder="blur" // Optional blur-up while loading
-                />
+                <Image src={LOGO} alt="Pioneer foundation" />
               </Link>
               <div className="nav-item-wrap">
                 <ul>

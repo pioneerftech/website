@@ -198,7 +198,7 @@
           padding: 0 0 15px;
           font-family: var(--font-Bold);
           color: white;
-          font-size: var(--fz-heading);
+          font-size: var(--fz-xl);
           letter-spacing: 1px;
         }
 
@@ -238,11 +238,18 @@
       .icon-wrap {
         height: 100px;
         width: 100px;
-        background-color: #89e6c9;
-        background-image: radial-gradient(at 1% 2%, #3855d6 0, transparent 50%),
-          radial-gradient(at 96% 94%, #38d694 0, transparent 50%);
+        background-color: #89e6c970;
+        background-image: radial-gradient(
+            at 1% 2%,
+            #087bc375 0,
+            transparent 80%
+          ),
+          radial-gradient(at 96% 94%, #38d694 0, transparent 60%);
         border-radius: 86% 14% 19% 81%/62% 25% 75% 38%;
-        padding: 10px;
+        padding: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         img {
           height: 100%;
           width: 100%;
