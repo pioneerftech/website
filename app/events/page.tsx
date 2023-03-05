@@ -58,7 +58,7 @@ function Events() {
           </div>
           <div className="blog-content-container">
             <div className="blog-date-depart-wrap">
-              Event Date - <span>21st February 2023</span>
+              Event Date - <span>2nd March 2023</span>
             </div>
             <div className="blog-content-tagline">
               A Small Glimpse of How Old Age Homes are changing to Better
@@ -79,15 +79,15 @@ function Events() {
               <Image src={cardimg2} alt="" />
             </div>
             <div className="image-content-bg">
-              <div className="image-sub-tag">How To</div>
-              <div className="image-tag">Senior Citizens</div>
-              <div className="image-description">Can Overcome From Stress</div>
+              <div className="image-sub-tag">We Arranged</div>
+              <div className="image-tag"> Fundraising Event</div>
+              <div className="image-description">For Better Helping Hands</div>
               <div className="foundation-tag">PIONEER Foundation</div>
             </div>
           </div>
           <div className="blog-content-container">
             <div className="blog-date-depart-wrap">
-              Event Date - <span>21st February 2023</span>
+              Event Date - <span>12th December 2022</span>
             </div>
             <div className="blog-content-tagline">
               How can Senior Citizens Overcome Stress
@@ -108,15 +108,17 @@ function Events() {
               <Image src={cardimg3} alt="" />
             </div>
             <div className="image-content-bg">
-              <div className="image-sub-tag">The</div>
-              <div className="image-tag">Old Age Homes</div>
-              <div className="image-description">And It's Advantages</div>
+              <div className="image-sub-tag">We Organized</div>
+              <div className="image-tag">Student Career Guidance</div>
+              <div className="image-description">
+                For Better Future Of Youths
+              </div>
               <div className="foundation-tag">PIONEER Foundation</div>
             </div>
           </div>
           <div className="blog-content-container">
             <div className="blog-date-depart-wrap">
-              Event Date - <span>21st February 2023</span>
+              Event Date - <span>15th September 2022</span>
             </div>
             <div className="blog-content-tagline">
               Old Age Homes and Its Advantages
@@ -137,15 +139,17 @@ function Events() {
               <Image src={cardimg4} alt="" />
             </div>
             <div className="image-content-bg">
-              <div className="image-sub-tag">5 Reasons</div>
-              <div className="image-tag">Become Volunteer</div>
-              <div className="image-description">For Old Age Home</div>
+              <div className="image-sub-tag">Run's</div>
+              <div className="image-tag">Women Empowerment Camp</div>
+              <div className="image-description">
+                For Building Self-Confidence
+              </div>
               <div className="foundation-tag">PIONEER Foundation</div>
             </div>
           </div>
           <div className="blog-content-container">
             <div className="blog-date-depart-wrap">
-              Event Date - <span>21st February 2023</span>
+              Event Date - <span>08th March 2022</span>
             </div>
             <div className="blog-content-tagline">
               Reasons Why You Must Volunteer for Old Age Homes
@@ -166,15 +170,17 @@ function Events() {
               <Image src={cardimg5} alt="" />
             </div>
             <div className="image-content-bg">
-              <div className="image-sub-tag">4 Important</div>
-              <div className="image-tag">Old Age Home</div>
-              <div className="image-description">Factors To Choose</div>
+              <div className="image-sub-tag">We Arranged</div>
+              <div className="image-tag">Covid Special Activity</div>
+              <div className="image-description">
+                For Awareness About Health
+              </div>
               <div className="foundation-tag">PIONEER Foundation</div>
             </div>
           </div>
           <div className="blog-content-container">
             <div className="blog-date-depart-wrap">
-              Event Date - <span>21st February 2023</span>
+              Event Date - <span>21st April 2020</span>
             </div>
             <div className="blog-content-tagline">
               Things to bear in mind while choosing an old age home
@@ -189,7 +195,7 @@ function Events() {
             </div>
           </div>
         </div>
-        <div className="blog-card hover" onClick={() => setActiveEvent(6)}>
+        {/* <div className="blog-card hover" onClick={() => setActiveEvent(6)}>
           <div className="blog-image-container">
             <div className="blog-image-wrap">
               <Image src={cardimg6} alt="" />
@@ -217,8 +223,8 @@ function Events() {
               </span>
             </div>
           </div>
-        </div>
-        <div className="blog-card hover" onClick={() => setActiveEvent(7)}>
+        </div> */}
+        {/* <div className="blog-card hover" onClick={() => setActiveEvent(7)}>
           <div className="blog-image-container">
             <div className="blog-image-wrap">
               <Image src={cardimg7} alt="" />
@@ -246,8 +252,8 @@ function Events() {
               </span>
             </div>
           </div>
-        </div>
-        <div className="blog-card hover" onClick={() => setActiveEvent(8)}>
+        </div> */}
+        {/* <div className="blog-card hover" onClick={() => setActiveEvent(8)}>
           <div className="blog-image-container">
             <div className="blog-image-wrap">
               <Image src={cardimg8} alt="" />
@@ -278,7 +284,7 @@ function Events() {
               </span>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
       <EventDetails
         eventId={activeEvent}

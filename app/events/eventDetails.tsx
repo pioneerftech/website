@@ -3,6 +3,8 @@ import "./eventDetails.scss";
 import Event1 from "./event1";
 import Event2 from "./event2";
 import Event3 from "./event3";
+import Event4 from "./event4";
+import Event5 from "./event5";
 
 function EventDetails({ eventId, setActiveEvent }: any) {
   function IoMdClose(props: any) {
@@ -35,6 +37,8 @@ function EventDetails({ eventId, setActiveEvent }: any) {
         {eventId == 1 && <Event1 />}
         {eventId == 2 && <Event2 />}
         {eventId == 3 && <Event3 />}
+        {eventId == 4 && <Event4 />}
+        {eventId == 5 && <Event5 />}
       </div>
     </div>
   );
