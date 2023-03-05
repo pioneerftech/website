@@ -115,6 +115,19 @@ export default function Home() {
         <Link
           shallow={true}
           className="nav-item"
+          href="/ourApproach#healthcare"
+        >
+          <div className="our-work-cards ">
+            <div className="icon-wrap">
+              <Image src={Cardicon6} alt="" />
+            </div>
+            <div className="card-tag">HEALTHCARE</div>
+          </div>
+        </Link>
+
+        <Link
+          shallow={true}
+          className="nav-item"
           href="/ourApproach#rural-development"
         >
           <div className="our-work-cards ">
@@ -148,19 +161,6 @@ export default function Home() {
               <Image src={Cardicon4} alt="" />
             </div>
             <div className="card-tag">WOMAN &FAMILY WELFARE ACTIVITIES</div>
-          </div>
-        </Link>
-
-        <Link
-          shallow={true}
-          className="nav-item"
-          href="/ourApproach#healthcare"
-        >
-          <div className="our-work-cards ">
-            <div className="icon-wrap">
-              <Image src={Cardicon6} alt="" />
-            </div>
-            <div className="card-tag">HEALTHCARE</div>
           </div>
         </Link>
 

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./footer.scss";
 import Image from "next/image";
-import LOGO from "../../public/logo.png";
+import LOGO from "/public/logo.png";
 import Link from "next/link";
 
 function footer() {

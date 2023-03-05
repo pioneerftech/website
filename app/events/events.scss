@@ -67,18 +67,29 @@
       box-shadow: 0 7px 29px 0 hsl(240deg 5% 41% / 20%);
 
       .blog-image-container {
-        height: 50%;
+        // height: 50%;
+        // width: 100%;
+        // display: flex;
+        // align-items: center;
+        // justify-content: flex-end;
+        // position: relative;
+        // background-color: #dee1ec;
+        // border-radius: 10px;
+
+        height: auto;
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: flex-end;
         position: relative;
-        background-color: #dee1ec;
+        // background-color: #dee1ec;
         border-radius: 10px;
+        flex-direction: column;
 
         .image-content-bg {
           height: 150px;
-          width: 70%;
+          // width: 70%;
+          width: 100%;
           background-color: var(--secondary-color);
           display: flex;
           align-items: center;
@@ -119,17 +130,30 @@
           }
         }
         .blog-image-wrap {
-          height: 150px;
-          width: 150px;
-          background-color: white;
-          position: absolute;
+          // height: 150px;
+          // width: 150px;
+          // background-color: white;
+          // position: absolute;
+          // left: 5px;
+          // border-radius: 50%;
+          // border-top: 5px solid black;
+          // border-bottom: 5px solid black;
+          // border-right: 5px solid black;
+          // outline: 3px solid white;
+          // overflow: hidden;
+
+          height: auto;
+          width: 100%;
+          /* background-color: white; */
+          /* position: absolute; */
           left: 5px;
-          border-radius: 50%;
-          border-top: 5px solid black;
-          border-bottom: 5px solid black;
-          border-right: 5px solid black;
-          outline: 3px solid white;
+          /* border-radius: 50%; */
+          /* border-top: 5px solid black; */
+          /* border-bottom: 5px solid black; */
+          /* border-right: 5px solid black; */
+          /* outline: 3px solid white; */
           overflow: hidden;
+
           img {
             height: 100%;
             width: 100%;
@@ -192,6 +216,7 @@
     .blog-card-container {
       flex-direction: column;
       gap: 20px;
+
       .blog-card {
         width: 100%;
         height: auto;

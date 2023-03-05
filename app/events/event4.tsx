@@ -1,6 +1,6 @@
 import React from "react";
 import PageSaperator from "@pageSaperator";
-import Eventimg4 from "../../public/event/forthevent.jpg";
+import Eventimg4 from "/public/event/Eventimg4.jpg";
 import Image from "next/image";
 
 function Event4() {

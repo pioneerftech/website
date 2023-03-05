@@ -269,7 +269,10 @@
     }
   }
 
-  @media only screen and (max-width: 720px) {
+  @media (max-width: 720px) {
+    .content-wrap {
+      padding: unset;
+    }
     .para-content-container {
       flex-direction: column;
     }
@@ -334,6 +337,27 @@
       }
       .subtag {
         text-align: center;
+      }
+    }
+  }
+  .our-work-card-wraper {
+    gap: 15px;
+    flex-wrap: wrap;
+    flex-direction: unset;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    padding: 10px;
+
+    .nav-item {
+      width: 47%;
+      .our-work-cards {
+        // height: 400px;
+        width: 100%;
+        padding: 25px;
+        .card-tag {
+          font-size: 13px;
+        }
       }
     }
   }

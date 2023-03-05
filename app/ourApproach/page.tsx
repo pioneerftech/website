@@ -1,12 +1,12 @@
 import React from "react";
 import "./ourApproach.scss";
 import Image from "next/image";
-import CONTENT1 from "../../public/ourApproach/content1.jpg";
-import content2 from "../../public/ourApproach/content2.jpg";
-import content3 from "../../public/ourApproach/content3.jpg";
-import content4 from "../../public/ourApproach/content4.jpg";
-import content5 from "../../public/ourApproach/content5.jpg";
-import content6 from "../../public/ourApproach/content6.jpg";
+import CONTENT1 from "/public/ourApproach/content1.jpg";
+import content2 from "/public/ourApproach/content2.jpg";
+import content3 from "/public/ourApproach/content3.jpg";
+import content4 from "/public/ourApproach/content4.jpg";
+import content5 from "/public/ourApproach/content5.jpg";
+import content6 from "/public/ourApproach/content6.jpg";
 import PageSaperator from "@pageSaperator";
 
 function ourApproach() {

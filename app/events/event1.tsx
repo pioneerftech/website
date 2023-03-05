@@ -1,7 +1,7 @@
 import PageSaperator from "@pageSaperator";
 import React from "react";
 import Image from "next/image";
-import Eventimg1 from "../../public/event/firstevent.jpg";
+import Eventimg1 from "/public/event/Eventimg1.jpg";
 
 function Event1() {
   return (
