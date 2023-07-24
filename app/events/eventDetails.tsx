@@ -5,6 +5,7 @@ import Event2 from "./event2";
 import Event3 from "./event3";
 import Event4 from "./event4";
 import Event5 from "./event5";
+import Event6 from "./event6";
 
 function EventDetails({ eventId, setActiveEvent }: any) {
   function IoMdClose(props: any) {
@@ -39,6 +40,7 @@ function EventDetails({ eventId, setActiveEvent }: any) {
         {eventId == 3 && <Event3 />}
         {eventId == 4 && <Event4 />}
         {eventId == 5 && <Event5 />}
+        {eventId == 6 && <Event6 />}
       </div>
     </div>
   );

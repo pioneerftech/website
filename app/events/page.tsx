@@ -8,9 +8,9 @@ import cardimg2 from "../../public/blog/cardimg2.jpg";
 import cardimg3 from "../../public/blog/cardimg3.jpg";
 import cardimg4 from "../../public/blog/cardimg4.jpg";
 import cardimg5 from "../../public/blog/cardimg5.jpg";
-import cardimg6 from "../../public/blog/cardimg6.jpg";
-import cardimg7 from "../../public/blog/cardimg7.jpg";
-import cardimg8 from "../../public/blog/cardimg8.jpg";
+// import cardimg6 from "../../public/blog/cardimg6.jpg";
+// import cardimg7 from "../../public/blog/cardimg7.jpg";
+// import cardimg8 from "../../public/blog/cardimg8.jpg";
 import EventDetails from "./eventDetails";
 
 function Events() {
@@ -44,6 +44,37 @@ function Events() {
       </div>
       <PageSaperator />
       <div className="blog-card-container">
+        <div className="blog-card hover" onClick={() => setActiveEvent(6)}>
+          <div className="blog-image-container">
+            <div className="blog-image-wrap">
+              <Image src={cardimg1} alt="" />
+            </div>
+            <div className="image-content-bg">
+              <div className="image-sub-tag">The</div>
+              <div className="image-tag">Empowering Health</div>
+              <div className="image-description">
+                Bringing Care to Those in Need
+              </div>
+              <div className="foundation-tag">PIONEER Foundation</div>
+            </div>
+          </div>
+          <div className="blog-content-container">
+            <div className="blog-date-depart-wrap">
+              Event Date - <span>12th March 2023</span>
+            </div>
+            <div className="blog-content-tagline">
+              Transforming Lives: Health Camp for the Underprivileged
+            </div>
+          </div>
+          <div className="event-btn-wraper">
+            <div className="event-btn">
+              Event Details
+              <span>
+                <BiMessageRoundedDetail />
+              </span>
+            </div>
+          </div>
+        </div>
         <div className="blog-card hover" onClick={() => setActiveEvent(1)}>
           <div className="blog-image-container">
             <div className="blog-image-wrap">
