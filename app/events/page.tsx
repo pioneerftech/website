@@ -16,7 +16,7 @@ import Eventimg2 from "/public/event/Eventimg2.jpg";
 import Eventimg3 from "/public/event/Eventimg3.jpg";
 import Eventimg4 from "/public/event/Eventimg4.jpg";
 import Eventimg5 from "/public/event/Eventimg5.jpg";
-import Eventimg6 from "/public/event/Eventimg6.jpg";
+import Eventimg6 from "/public/event/sixthevent.jpg";
 import Eventimg7 from "/public/event/Eventimg7.jpg";
 import EventDetails from "./eventDetails";
 
@@ -54,7 +54,7 @@ function Events() {
         <div className="blog-card hover" onClick={() => setActiveEvent(6)}>
           <div className="blog-image-container">
             <div className="blog-image-wrap">
-              <Image src={cardimg1} alt="" />
+              <Image src={Eventimg6} alt="" />
             </div>
             <div className="image-content-bg">
               <div className="image-sub-tag">The</div>
