@@ -1,6 +1,7 @@
 import React from "react";
 import "./contactus.scss";
 import PageSaperator from "@pageSaperator";
+import Link from "next/link";
 
 function Contactus() {
   function AiOutlineHome() {
@@ -86,41 +87,57 @@ function Contactus() {
             </div>
           </div>
           <div className="contactus-info-wrap">
-            <div className="contactus-info-row">
-              <div className="contactus-info-icon-wrap">
-                <div className="contactus-info-icon">
-                  <AiOutlineHome />
+            <a
+              className="nav-item"
+              href="https://goo.gl/maps/UtSncS8Ezh3JFnfc9"
+              target="_blank"
+            >
+              <div className="contactus-info-row">
+                <div className="contactus-info-icon-wrap">
+                  <div className="contactus-info-icon">
+                    <AiOutlineHome />
+                  </div>
+                </div>
+                <div className="contactus-info-content">
+                  <div className="contactus-info-tag">Our Location</div>
+                  <div className="contactus-info-detail">
+                    T-10, Dhruta Capital, 635 Budhwar peth, Pune - 411 002.
+                  </div>
                 </div>
               </div>
-              <div className="contactus-info-content">
-                <div className="contactus-info-tag">Our Location</div>
-                <div className="contactus-info-detail">
-                  Pune, Pune. Maharashtra
+            </a>
+            <a className="nav-item" href="tel:+91 7070191975" target="_self">
+              <div className="contactus-info-row">
+                <div className="contactus-info-icon-wrap">
+                  <div className="contactus-info-icon">
+                    <AiOutlinePhone />
+                  </div>
+                </div>
+                <div className="contactus-info-content">
+                  <div className="contactus-info-tag">Phone Number</div>
+                  <div className="contactus-info-detail">+91 7070191975</div>
                 </div>
               </div>
-            </div>
-            <div className="contactus-info-row">
-              <div className="contactus-info-icon-wrap">
-                <div className="contactus-info-icon">
-                  <AiOutlinePhone />
+            </a>
+            <a
+              className="nav-item"
+              href="mailto:pioneerftech@gmail.com"
+              target="_self"
+            >
+              <div className="contactus-info-row">
+                <div className="contactus-info-icon-wrap">
+                  <div className="contactus-info-icon">
+                    <AiOutlineMail />
+                  </div>
+                </div>
+                <div className="contactus-info-content">
+                  <div className="contactus-info-tag">Email Address</div>
+                  <div className="contactus-info-detail">
+                    pioneerftech@gmail.com
+                  </div>
                 </div>
               </div>
-              <div className="contactus-info-content">
-                <div className="contactus-info-tag">Phone Number</div>
-                <div className="contactus-info-detail">9405829407</div>
-              </div>
-            </div>
-            <div className="contactus-info-row">
-              <div className="contactus-info-icon-wrap">
-                <div className="contactus-info-icon">
-                  <AiOutlineMail />
-                </div>
-              </div>
-              <div className="contactus-info-content">
-                <div className="contactus-info-tag">Email Address</div>
-                <div className="contactus-info-detail">pioneer@gmail.com</div>
-              </div>
-            </div>
+            </a>
           </div>
         </div>
         <div className="contactus-form-sub-container">

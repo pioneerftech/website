@@ -11,6 +11,13 @@ import cardimg5 from "../../public/blog/cardimg5.jpg";
 // import cardimg6 from "../../public/blog/cardimg6.jpg";
 // import cardimg7 from "../../public/blog/cardimg7.jpg";
 // import cardimg8 from "../../public/blog/cardimg8.jpg";
+import Eventimg1 from "/public/event/Eventimg1.jpg";
+import Eventimg2 from "/public/event/Eventimg2.jpg";
+import Eventimg3 from "/public/event/Eventimg3.jpg";
+import Eventimg4 from "/public/event/Eventimg4.jpg";
+import Eventimg5 from "/public/event/Eventimg5.jpg";
+import Eventimg6 from "/public/event/Eventimg6.jpg";
+import Eventimg7 from "/public/event/Eventimg7.jpg";
 import EventDetails from "./eventDetails";
 
 function Events() {
@@ -78,7 +85,7 @@ function Events() {
         <div className="blog-card hover" onClick={() => setActiveEvent(1)}>
           <div className="blog-image-container">
             <div className="blog-image-wrap">
-              <Image src={cardimg1} alt="" />
+              <Image src={Eventimg1} alt="" />
             </div>
             <div className="image-content-bg">
               <div className="image-sub-tag">How</div>
@@ -107,7 +114,7 @@ function Events() {
         <div className="blog-card hover" onClick={() => setActiveEvent(2)}>
           <div className="blog-image-container">
             <div className="blog-image-wrap">
-              <Image src={cardimg2} alt="" />
+              <Image src={Eventimg2} alt="" />
             </div>
             <div className="image-content-bg">
               <div className="image-sub-tag">We Arranged</div>
@@ -136,7 +143,7 @@ function Events() {
         <div className="blog-card hover" onClick={() => setActiveEvent(3)}>
           <div className="blog-image-container">
             <div className="blog-image-wrap">
-              <Image src={cardimg3} alt="" />
+              <Image src={Eventimg3} alt="" />
             </div>
             <div className="image-content-bg">
               <div className="image-sub-tag">We Organized</div>
@@ -167,7 +174,7 @@ function Events() {
         <div className="blog-card hover" onClick={() => setActiveEvent(4)}>
           <div className="blog-image-container">
             <div className="blog-image-wrap">
-              <Image src={cardimg4} alt="" />
+              <Image src={Eventimg4} alt="" />
             </div>
             <div className="image-content-bg">
               <div className="image-sub-tag">Run's</div>
@@ -198,7 +205,7 @@ function Events() {
         <div className="blog-card hover" onClick={() => setActiveEvent(5)}>
           <div className="blog-image-container">
             <div className="blog-image-wrap">
-              <Image src={cardimg5} alt="" />
+              <Image src={Eventimg5} alt="" />
             </div>
             <div className="image-content-bg">
               <div className="image-sub-tag">We Arranged</div>
@@ -229,7 +236,7 @@ function Events() {
         {/* <div className="blog-card hover" onClick={() => setActiveEvent(6)}>
           <div className="blog-image-container">
             <div className="blog-image-wrap">
-              <Image src={cardimg6} alt="" />
+              <Image src={Eventimg6} alt="" />
             </div>
             <div className="image-content-bg">
               <div className="image-sub-tag">For</div>
@@ -258,7 +265,7 @@ function Events() {
         {/* <div className="blog-card hover" onClick={() => setActiveEvent(7)}>
           <div className="blog-image-container">
             <div className="blog-image-wrap">
-              <Image src={cardimg7} alt="" />
+              <Image src={Eventimg7} alt="" />
             </div>
             <div className="image-content-bg">
               <div className="image-sub-tag">Best</div>
@@ -287,7 +294,7 @@ function Events() {
         {/* <div className="blog-card hover" onClick={() => setActiveEvent(8)}>
           <div className="blog-image-container">
             <div className="blog-image-wrap">
-              <Image src={cardimg8} alt="" />
+              <Image src={Eventimg8} alt="" />
             </div>
             <div className="image-content-bg">
               <div className="image-sub-tag">Our</div>

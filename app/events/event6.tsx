@@ -1,7 +1,7 @@
-import React from "react";
-import PageSaperator from "@pageSaperator";
 import Image from "next/image";
 import Eventimg6 from "../../public/event/sixthevent.jpg";
+import PageSaperator from "@pageSaperator";
+import React from "react";
 
 function Event6() {
   return (

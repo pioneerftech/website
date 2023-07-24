@@ -13,6 +13,7 @@ import Story1 from "../public/home/Story/firststoryimg.jpg";
 import Story2 from "../public/home/Story/secondstoryimg.jpg";
 import Story3 from "../public/home/Story/thirdstoryimg.jpg";
 import Story4 from "../public/home/Story/forthstoryimg.jpg";
+import Link from "next/link";
 
 // const inter = Inter({ subsets: ["latin"] });
 
@@ -38,7 +39,12 @@ export default function Home() {
           knowledge without any discrimination ofcaste, creed, language etc.
         </div>
         <div className="read-more d-f-c">
-          <div className=" hover-text">Read more...</div>
+          <div className=" hover-text">
+            {" "}
+            <Link shallow={true} className="nav-item" href="/aboutus">
+              Read More ...
+            </Link>
+          </div>
         </div>
       </div>
       <PageSaperator />
@@ -47,18 +53,41 @@ export default function Home() {
           <div className="para-content-container">
             <div className="para-sub-container1">
               <div className="content-wrap">
-                <div className="subheading">Our Vision & Mission</div>
+                <div className="subheading">Our Mission</div>
                 <div className="heading">
-                  Promote Education, Agriculture, Rural and Youth Development,
-                  Welfare of Child, Women and Family
+                  We connect people around the world in the fight to end
+                  poverty. Working together, we invest in the lives of children
+                  and youth, build the healthy environments they need to thrive,
+                  and empower them to create lasting change in their own lives
+                  and communities.
                 </div>
-                <div className="content-container">
-                  The PIONEER EDUCATION & RESEARCH FOUNDATION is established to
-                  promote education agriculture, rural and youth development
-                  welfare of child, women and family to promote charity, social
-                  reforms of useful knowledge without any discrimination
-                  ofcaste, creed, language etc.
+                {/* <div className="content-container">
+                  We connect people around the world in the fight to end
+                  poverty. Working together, we invest in the lives of children
+                  and youth, build the healthy environments they need to thrive,
+                  and empower them to create lasting change in their own lives
+                  and communities.
+                </div> */}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <PageSaperator />
+      <div className="parallax-main-container d-f-c">
+        <div className="parallax">
+          <div className="para-content-container">
+            <div className="para-sub-container1">
+              <div className="content-wrap">
+                <div className="subheading">Our Vision </div>
+                <div className="heading">
+                  A world in which every child attains the right to survival,
+                  protection, development and participation.
                 </div>
+                {/* <div className="content-container">
+                  A world in which every child attains the right to survival,
+                  protection, development and participation.
+                </div> */}
               </div>
             </div>
           </div>
@@ -66,46 +95,87 @@ export default function Home() {
       </div>
       <PageSaperator />
       <div className="content-wrap">
-        <div className="subheading">Our</div>
-        <div className="heading">Work Areas</div>
+        <div className="subheading">What We Do</div>
+        <div className="heading">Our Work Areas</div>
       </div>
       <div className="our-work-card-wraper">
-        <div className="our-work-cards ">
-          <div className="icon-wrap">
-            <Image src={Cardicon1} alt="" />
+        <Link
+          shallow={true}
+          className="nav-item"
+          href="/ourApproach#educational"
+        >
+          <div className="our-work-cards ">
+            <div className="icon-wrap">
+              <Image src={Cardicon1} alt="" />
+            </div>
+            <div className="card-tag">EDUCATIONAL</div>
           </div>
-          <div className="card-tag">EDUCATIONAL</div>
-        </div>
-        <div className="our-work-cards ">
-          <div className="icon-wrap">
-            <Image src={Cardicon2} alt="" />
+        </Link>
+
+        <Link
+          shallow={true}
+          className="nav-item"
+          href="/ourApproach#healthcare"
+        >
+          <div className="our-work-cards ">
+            <div className="icon-wrap">
+              <Image src={Cardicon6} alt="" />
+            </div>
+            <div className="card-tag">HEALTHCARE</div>
           </div>
-          <div className="card-tag">AGRICULTURA LDEVELOPMENT & RESEARCH</div>
-        </div>
-        <div className="our-work-cards ">
-          <div className="icon-wrap">
-            <Image src={Cardicon3} alt="" />
+        </Link>
+
+        <Link
+          shallow={true}
+          className="nav-item"
+          href="/ourApproach#rural-development"
+        >
+          <div className="our-work-cards ">
+            <div className="icon-wrap">
+              <Image src={Cardicon3} alt="" />
+            </div>
+            <div className="card-tag">RURAL DEVELOPMENT & RESEARCH</div>
           </div>
-          <div className="card-tag">RURAL DEVELOPMENT & RESEARCH</div>
-        </div>
-        <div className="our-work-cards ">
-          <div className="icon-wrap">
-            <Image src={Cardicon4} alt="" />
+        </Link>
+
+        <Link
+          shallow={true}
+          className="nav-item"
+          href="/ourApproach#agricultural-development"
+        >
+          <div className="our-work-cards ">
+            <div className="icon-wrap">
+              <Image src={Cardicon2} alt="" />
+            </div>
+            <div className="card-tag">AGRICULTURA LDEVELOPMENT & RESEARCH</div>
           </div>
-          <div className="card-tag">WOMAN &FAMILY WELFARE ACTIVITIES</div>
-        </div>
-        <div className="our-work-cards ">
-          <div className="icon-wrap">
-            <Image src={Cardicon5} alt="" />
+        </Link>
+
+        <Link
+          shallow={true}
+          className="nav-item"
+          href="/ourApproach#women-&-family-welfare-activities"
+        >
+          <div className="our-work-cards ">
+            <div className="icon-wrap">
+              <Image src={Cardicon4} alt="" />
+            </div>
+            <div className="card-tag">WOMAN &FAMILY WELFARE ACTIVITIES</div>
           </div>
-          <div className="card-tag">YOUTH DEVELOPMENT ACTIVITIES</div>
-        </div>
-        <div className="our-work-cards ">
-          <div className="icon-wrap">
-            <Image src={Cardicon6} alt="" />
+        </Link>
+
+        <Link
+          shallow={true}
+          className="nav-item"
+          href="/ourApproach#youth-development-activities"
+        >
+          <div className="our-work-cards ">
+            <div className="icon-wrap">
+              <Image src={Cardicon5} alt="" />
+            </div>
+            <div className="card-tag">YOUTH DEVELOPMENT ACTIVITIES</div>
           </div>
-          <div className="card-tag">HEALTHCARE</div>
-        </div>
+        </Link>
       </div>
       <PageSaperator />
       <div className="content-wrap">
@@ -173,7 +243,7 @@ export default function Home() {
               <Image src={Story3} alt="" />
             </div>
           </div>
-          <div className="content-sub-container">
+          {/* <div className="content-sub-container">
             <div className="content-image-container">
               <Image src={Story4} alt="" />
             </div>
@@ -193,7 +263,7 @@ export default function Home() {
               </div>
               <div className="name-tag">- Rameshwar</div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

@@ -1,12 +1,12 @@
 import React from "react";
 import "./ourApproach.scss";
 import Image from "next/image";
-import CONTENT1 from "../../public/ourApproach/content1.jpg";
-import content2 from "../../public/ourApproach/content2.jpg";
-import content3 from "../../public/ourApproach/content3.jpg";
-import content4 from "../../public/ourApproach/content4.jpg";
-import content5 from "../../public/ourApproach/content5.jpg";
-import content6 from "../../public/ourApproach/content6.jpg";
+import CONTENT1 from "/public/ourApproach/content1.jpg";
+import content2 from "/public/ourApproach/content2.jpg";
+import content3 from "/public/ourApproach/content3.jpg";
+import content4 from "/public/ourApproach/content4.jpg";
+import content5 from "/public/ourApproach/content5.jpg";
+import content6 from "/public/ourApproach/content6.jpg";
 import PageSaperator from "@pageSaperator";
 
 function ourApproach() {
@@ -36,7 +36,7 @@ function ourApproach() {
 
       <div className="content-container">
         <div className="content-sub-container">
-          <div className="content-wrap">
+          <div className="content-wrap" id="educational">
             <div className="content-tag">Educational</div>
             <div className="content-description">
               As per Pioneer Education & Reserch Foundation, a quality childhood
@@ -57,7 +57,7 @@ function ourApproach() {
           <div className="content-image-container">
             <Image src={content2} alt="" />
           </div>
-          <div className="content-wrap">
+          <div className="content-wrap" id="rural-development">
             <div className="content-tag"> Rural Development & Research</div>
             <div className="content-description">
               At our NGO, we recognize the crucial role that rural development
@@ -74,7 +74,7 @@ function ourApproach() {
           </div>
         </div>
         <div className="content-sub-container">
-          <div className="content-wrap">
+          <div className="content-wrap" id="agricultural-development">
             <div className="content-tag">
               Agricultural Development & Research
             </div>
@@ -99,7 +99,7 @@ function ourApproach() {
           <div className="content-image-container">
             <Image src={content4} alt="" />
           </div>
-          <div className="content-wrap">
+          <div className="content-wrap" id="women-&-family-welfare-activities">
             <div className="content-tag">Women & Family Welfare Activities</div>
             <div className="content-description">
               Pioneer Education & Reserch Foundation is an adamant believer of,
@@ -114,7 +114,7 @@ function ourApproach() {
           </div>
         </div>
         <div className="content-sub-container">
-          <div className="content-wrap">
+          <div className="content-wrap" id="healthcare">
             <div className="content-tag"> Health Care</div>
             <div className="content-description">
               Of course! Better health is central to human happiness and
@@ -135,7 +135,7 @@ function ourApproach() {
           <div className="content-image-container">
             <Image src={content6} alt="" />
           </div>
-          <div className="content-wrap">
+          <div className="content-wrap" id="youth-development-activities">
             <div className="content-tag">Youth Development Activities</div>
             <div className="content-description">
               Our NGO is dedicated to promoting the positive development of
