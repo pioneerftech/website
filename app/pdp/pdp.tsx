@@ -8,8 +8,8 @@ export default function pdp() {
         <div className="hero-content f-d-col d-f-c">
           <div className="heading">Our Helping To The World</div>
           <div className="subheading">
-            Empowered women and girls can lift their entire families and
-            communities out of poverty.
+            Education is the most powerful weapon which you can use to change
+            the world.
           </div>
         </div>
       </div>

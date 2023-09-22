@@ -11,7 +11,7 @@
     color: white;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
     flex-direction: column;
     gap: 10px;
 
@@ -32,6 +32,7 @@
       font-weight: 600;
       z-index: 2;
       font-size: var(--fz-heading);
+      color: #ff6f00;
     }
     .subtag {
       color: var(--lightest-slate);
@@ -39,12 +40,21 @@
       font-family: var(--font-SemiBold);
       z-index: 2;
     }
+    .name-subtag {
+      text-align: center;
+      color: #fccb18;
+      width: 70%;
+      z-index: 2;
+      margin-bottom: 10px;
+    }
   }
   .content-wrap {
     flex-direction: column;
     padding: 20px;
     display: flex;
     align-items: center;
+    background-color: var(--light-slate);
+    box-shadow: var(--shadow);
 
     .subheading {
       font-size: var(--fz-lg);
@@ -185,7 +195,7 @@
         .subheading {
           font-size: var(--fz-lg);
           font-family: var(--secondary-font);
-          color: white;
+          // color: white;
           margin-bottom: 3px;
           display: flex;
           align-items: center;
@@ -197,7 +207,7 @@
           width: 100%;
           padding: 0 0 15px;
           font-family: var(--font-Bold);
-          color: white;
+          // color: white;
           font-size: var(--fz-xl);
           letter-spacing: 1px;
         }
@@ -256,7 +266,6 @@
         }
       }
       .card-tag {
-        font-size: var(--fz-lg);
         font-family: var(--secondary-font);
         color: #323759;
         margin-bottom: 3px;
@@ -341,23 +350,20 @@
     }
   }
   .our-work-card-wraper {
-    gap: 15px;
+    gap: 20px;
     flex-wrap: wrap;
     flex-direction: unset;
     justify-content: center;
     align-items: flex-start;
-    width: 100%;
+    width: 80%;
     padding: 10px;
 
     .nav-item {
-      width: 47%;
+      width: 27%;
       .our-work-cards {
         // height: 400px;
         width: 100%;
         padding: 25px;
-        .card-tag {
-          font-size: 13px;
-        }
       }
     }
   }

@@ -60,7 +60,7 @@ function Aboutus() {
             protection, development and participation.
           </div>
         </div>
-        {/* <div className="cards">
+        <div className="cards">
           <div className="card-logo-wrap">
             <Image src={cardlogo3} alt="" />
           </div>
@@ -75,7 +75,7 @@ function Aboutus() {
               <li>Accountability</li>
             </ul>
           </div>
-        </div> */}
+        </div>
       </div>
       <PageSaperator />
 

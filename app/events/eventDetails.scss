@@ -27,7 +27,7 @@
     height: 80%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 10px;
     border-radius: 4px;
 
@@ -36,7 +36,7 @@
       width: 50%;
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: none;
       flex-direction: column;
       .event-image-container {
         // width: 100%;
@@ -85,6 +85,8 @@
         .width100 {
           font-size: var(--fz-sm);
           letter-spacing: var(--letter-spacong-md);
+          width: 100%;
+          height: 50px;
         }
         .center {
           width: 100%;

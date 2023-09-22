@@ -19,30 +19,47 @@ import blog_5 from "/public/blog/blog_5.jpg";
 import blog_6 from "/public/blog/blog_6.jpg";
 import blog_7 from "/public/blog/blog_7.jpg";
 import Link from "next/link";
+import cardlogo3 from "../../public/aboutus/our-values.png";
+
+function RiBankFill() {
+  return (
+    <svg
+      stroke="currentColor"
+      fill="currentColor"
+      strokeWidth={0}
+      viewBox="0 0 24 24"
+    >
+      <g>
+        <path fill="none" d="M0 0h24v24H0z" />
+        <path d="M2 20h20v2H2v-2zm2-8h2v7H4v-7zm5 0h2v7H9v-7zm4 0h2v7h-2v-7zm5 0h2v7h-2v-7zM2 7l10-5 10 5v4H2V7zm10 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+      </g>
+    </svg>
+  );
+}
 
 function Blog() {
   return (
     <div className="blog-container">
       <div className="image-container">
         <div className="hero-content f-d-col d-f-c">
-          <div className="heading">Blog</div>
+          <div className="heading">Donate</div>
           <div className="subheading">Give a helping hand for poor people</div>
         </div>
       </div>
       <PageSaperator />
-      <div className="blog-card-container">
+      {/* <div className="blog-card-container">
         <div className="blog-card hover">
           <Link href="/blog/celebrating-impact">
             <div className="blog-image-container">
               <div className="blog-image-wrap">
                 <Image src={blog_1} alt="" />
               </div>
-              {/* <div className="image-content-bg">
+              <div className="image-content-bg">
                 <div className="image-sub-tag">How</div>
                 <div className="image-tag">Old Age Home</div>
                 <div className="image-description">Are Changing To Better</div>
                 <div className="foundation-tag">PIONEER Foundation</div>
-              </div> */}
+              </div>
             </div>
             <div className="blog-content-container">
               <div className="blog-date-depart-wrap">
@@ -52,7 +69,7 @@ function Blog() {
                 How Our Nonprofit Organization is Making a Difference
               </div>
             </div>
-            {/* <div className="blog-comment-view-wraper">
+            <div className="blog-comment-view-wraper">
               <div className="blog-comment">
                 <div className="comment-view-logo">
                   <FaRegComments />
@@ -67,7 +84,7 @@ function Blog() {
                 <div className="comment-view-count">112</div>
                 <div className="comment-view-tag">Views</div>
               </div>
-            </div> */}
+            </div>
           </Link>
         </div>
 
@@ -179,6 +196,46 @@ function Blog() {
               </div>
             </div>
           </Link>
+        </div>
+      </div> */}
+      <div className="cards-wraper">
+        {/* <div className="cards">
+          <div className="card-logo-wrap">
+            <Image src={cardlogo3} alt="" />
+          </div>
+          <div className="card-content-tag">Our Mission</div>
+          <div className="card-content-sub-tag">
+            We connect people around the world in the fight to end poverty.
+            Working together, we invest in the lives of children and youth,
+            build the healthy environments they need to thrive, and empower them
+            to create lasting change in their own lives and communities.
+          </div>
+        </div> */}
+        <div className="cards">
+          <div className="card-logo-wrap">
+            <RiBankFill />
+          </div>
+          <div className="card-content-tag">Account Details</div>
+          <div className="card-content-sub-tag">
+            <div className="ac-name">Account Number</div>
+            <div className="ac-details">: 60222545912</div>
+          </div>
+          <div className="card-content-sub-tag">
+            <div className="ac-name">IFSC Code</div>
+            <div className="ac-details">: MAHB0000001</div>
+          </div>
+          <div className="card-content-sub-tag">
+            <div className="ac-name">Brnach Code</div>
+            <div className="ac-details">: 0001</div>
+          </div>
+          <div className="card-content-sub-tag">
+            <div className="ac-name">Branch Add</div>
+            <div className="ac-details">: Bank Of Maharashtra</div>
+          </div>
+          <div className="card-content-sub-tag">
+            <div className="ac-name">Branch Add</div>
+            <div className="ac-details">: Bajirao Road, Pune</div>
+          </div>
         </div>
       </div>
     </div>

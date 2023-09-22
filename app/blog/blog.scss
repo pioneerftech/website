@@ -226,3 +226,66 @@
     }
   }
 }
+
+.cards-wraper {
+  width: 100%;
+  padding: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+
+  .cards {
+    width: calc(100vw / 2);
+    height: auto;
+    padding: 2% 5%;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 13px;
+    &::after {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(26, 25, 25, 0.589);
+      backdrop-filter: blur(5px);
+    }
+    .card-logo-wrap {
+      height: 50px;
+      width: 50px;
+      z-index: 2;
+      svg {
+        z-index: 2;
+      }
+    }
+    .card-content-tag {
+      color: white;
+      z-index: 2;
+      font-size: var(--fz-heading);
+    }
+    .card-content-sub-tag {
+      font-size: var(--fz-sm);
+      width: 100%;
+      padding: 2% 2%;
+      list-style: none;
+      height: auto;
+      display: flex;
+      z-index: 2;
+      color: white;
+
+      .ac-name {
+        width: 50%;
+        font-size: var(--fz-lg);
+      }
+      .ac-details {
+        width: 50%;
+        font-size: var(--fz-lg);
+      }
+    }
+  }
+}

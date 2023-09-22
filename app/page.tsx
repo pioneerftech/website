@@ -21,11 +21,12 @@ export default function Home() {
   return (
     <div className="home-page-container">
       <div className="image-container">
-        <div className="tag">Our Helping To The World</div>
-        <div className="subtag">
-          Empowered women and girls can lift their entire families and
-          communities out of poverty.
+        <div className="tag">
+          Education is the most powerful weapon which you can use to change the
+          world.
         </div>
+        {/* <div className="subtag"></div> */}
+        <div className="name-subtag">- Savitribai Phule</div>
       </div>
       <PageSaperator />
 

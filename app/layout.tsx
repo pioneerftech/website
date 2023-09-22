@@ -149,7 +149,7 @@ export default function RootLayout({
                       className="nav-item"
                       href="/blog"
                     >
-                      Blog
+                      Donate
                     </Link>
                   </li>
                   <li

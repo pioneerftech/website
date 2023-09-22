@@ -18,6 +18,13 @@ import Eventimg4 from "/public/event/Eventimg4.jpg";
 import Eventimg5 from "/public/event/Eventimg5.jpg";
 import Eventimg6 from "/public/event/sixthevent.jpg";
 import Eventimg7 from "/public/event/Eventimg7.jpg";
+import Eventimg8 from "/public/event/Eventimg8.jpg";
+import Eventimg9 from "/public/event/Eventimg9.jpg";
+import Eventimg10 from "/public/event/Eventimg10.jpg";
+import Eventimg11 from "/public/event/Eventimg11.jpg";
+import Eventimg13 from "/public/event/Eventimg13.jpg";
+import Eventimg14 from "/public/event/Eventimg14.jpg";
+import Eventimg888 from "/public/event/Eventimg888.jpg";
 import EventDetails from "./eventDetails";
 
 function Events() {
@@ -262,7 +269,7 @@ function Events() {
             </div>
           </div>
         </div> */}
-        {/* <div className="blog-card hover" onClick={() => setActiveEvent(7)}>
+        <div className="blog-card hover" onClick={() => setActiveEvent(7)}>
           <div className="blog-image-container">
             <div className="blog-image-wrap">
               <Image src={Eventimg7} alt="" />
@@ -290,17 +297,17 @@ function Events() {
               </span>
             </div>
           </div>
-        </div> */}
-        {/* <div className="blog-card hover" onClick={() => setActiveEvent(8)}>
+        </div>
+        <div className="blog-card hover" onClick={() => setActiveEvent(8)}>
           <div className="blog-image-container">
             <div className="blog-image-wrap">
-              <Image src={Eventimg8} alt="" />
+              <Image src={Eventimg888} alt="" />
             </div>
             <div className="image-content-bg">
-              <div className="image-sub-tag">Our</div>
-              <div className="image-tag">NGO's Role</div>
+              <div className="image-sub-tag">The</div>
+              <div className="image-tag">CM Medical Relief</div>
               <div className="image-description">
-                In Child Education And Women empowerment.
+                "Extending Hope, Healing Lives."
               </div>
               <div className="foundation-tag">PIONEER Foundation</div>
             </div>
@@ -310,8 +317,103 @@ function Events() {
               Event Date - <span>21st February 2023</span>
             </div>
             <div className="blog-content-tagline">
-              Women empowerment, developing old age homes and promoting child
-              education
+              "Empowering Compassion, Transforming Lives: Maharashtra's
+              Healthcare Safety Net."
+            </div>
+          </div>
+          <div className="event-btn-wraper">
+            <div className="event-btn">
+              Event Details
+              <span>
+                <BiMessageRoundedDetail />
+              </span>
+            </div>
+          </div>
+        </div>
+        <div className="blog-card hover" onClick={() => setActiveEvent(9)}>
+          <div className="blog-image-container">
+            <div className="blog-image-wrap">
+              <Image src={Eventimg9} alt="" />
+            </div>
+            <div className="image-content-bg">
+              <div className="image-sub-tag">The</div>
+              <div className="image-tag">Workshop For Womens</div>
+              <div className="image-description">
+                "Women Rise Strong: Empower Humanity."
+              </div>
+              <div className="foundation-tag">PIONEER Foundation</div>
+            </div>
+          </div>
+          <div className="blog-content-container">
+            <div className="blog-date-depart-wrap">
+              Event Date - <span>21st February 2023</span>
+            </div>
+            <div className="blog-content-tagline">
+              "Empowering Her, Empowering Humanity: Women Rise Strong."
+            </div>
+          </div>
+          <div className="event-btn-wraper">
+            <div className="event-btn">
+              Event Details
+              <span>
+                <BiMessageRoundedDetail />
+              </span>
+            </div>
+          </div>
+        </div>
+        <div className="blog-card hover" onClick={() => setActiveEvent(10)}>
+          <div className="blog-image-container">
+            <div className="blog-image-wrap">
+              <Image src={Eventimg10} alt="" />
+            </div>
+            <div className="image-content-bg">
+              <div className="image-sub-tag">The</div>
+              <div className="image-tag">Free Cataract Surgery</div>
+              <div className="image-description">
+                "See the World Anew: Cataract Surgery Event!"
+              </div>
+              <div className="foundation-tag">PIONEER Foundation</div>
+            </div>
+          </div>
+          <div className="blog-content-container">
+            <div className="blog-date-depart-wrap">
+              Event Date - <span>21st February 2023</span>
+            </div>
+            <div className="blog-content-tagline">
+              "Clarity Restored: See the World Anew - Join Our Cataract Surgery
+              Event!"
+            </div>
+          </div>
+          <div className="event-btn-wraper">
+            <div className="event-btn">
+              Event Details
+              <span>
+                <BiMessageRoundedDetail />
+              </span>
+            </div>
+          </div>
+        </div>
+        {/* <div className="blog-card hover" onClick={() => setActiveEvent(11)}>
+          <div className="blog-image-container">
+            <div className="blog-image-wrap">
+              <Image src={Eventimg8} alt="" />
+            </div>
+            <div className="image-content-bg">
+              <div className="image-sub-tag">The</div>
+              <div className="image-tag">Competitive Exam</div>
+              <div className="image-description">
+                "To make the new generation responsible"
+              </div>
+              <div className="foundation-tag">PIONEER Foundation</div>
+            </div>
+          </div>
+          <div className="blog-content-container">
+            <div className="blog-date-depart-wrap">
+              Event Date - <span>21st February 2023</span>
+            </div>
+            <div className="blog-content-tagline">
+              "Unlock Your Potential, Excel in Jidnyasa: The Journey to Success
+              Begins Here!"
             </div>
           </div>
           <div className="event-btn-wraper">
@@ -323,6 +425,101 @@ function Events() {
             </div>
           </div>
         </div> */}
+        <div className="blog-card hover" onClick={() => setActiveEvent(12)}>
+          <div className="blog-image-container">
+            <div className="blog-image-wrap">
+              <Image src={Eventimg11} alt="" />
+            </div>
+            <div className="image-content-bg">
+              <div className="image-sub-tag">The</div>
+              <div className="image-tag">Making Running Ground</div>
+              <div className="image-description">
+                "To make the country strong, start from yourself"
+              </div>
+              <div className="foundation-tag">PIONEER Foundation</div>
+            </div>
+          </div>
+          <div className="blog-content-container">
+            <div className="blog-date-depart-wrap">
+              Event Date - <span>21st February 2023</span>
+            </div>
+            <div className="blog-content-tagline">
+              "Unleash Your Boundless Spirit: A Free Running Ground for Youth."
+            </div>
+          </div>
+          <div className="event-btn-wraper">
+            <div className="event-btn">
+              Event Details
+              <span>
+                <BiMessageRoundedDetail />
+              </span>
+            </div>
+          </div>
+        </div>
+        <div className="blog-card hover" onClick={() => setActiveEvent(13)}>
+          <div className="blog-image-container">
+            <div className="blog-image-wrap">
+              <Image src={Eventimg13} alt="" />
+            </div>
+            <div className="image-content-bg">
+              <div className="image-sub-tag">The</div>
+              <div className="image-tag">Youth Dialogue Program</div>
+              <div className="image-description">
+                "Empowering Voices: Youth Dialogue for Tomorrow."
+              </div>
+              <div className="foundation-tag">PIONEER Foundation</div>
+            </div>
+          </div>
+          <div className="blog-content-container">
+            <div className="blog-date-depart-wrap">
+              Event Date - <span>21st February 2023</span>
+            </div>
+            <div className="blog-content-tagline">
+              "Empowering Voices: Youth Dialogue Program - Building a Better
+              Tomorrow."
+            </div>
+          </div>
+          <div className="event-btn-wraper">
+            <div className="event-btn">
+              Event Details
+              <span>
+                <BiMessageRoundedDetail />
+              </span>
+            </div>
+          </div>
+        </div>
+        <div className="blog-card hover" onClick={() => setActiveEvent(14)}>
+          <div className="blog-image-container">
+            <div className="blog-image-wrap">
+              <Image src={Eventimg14} alt="" />
+            </div>
+            <div className="image-content-bg">
+              <div className="image-sub-tag">The</div>
+              <div className="image-tag">Jidnyasa Study Center</div>
+              <div className="image-description">
+                "Nurturing Dreams, Empowering Minds: Jidnyasa Study Center"
+              </div>
+              <div className="foundation-tag">PIONEER Foundation</div>
+            </div>
+          </div>
+          <div className="blog-content-container">
+            <div className="blog-date-depart-wrap">
+              Event Date - <span>21st February 2023</span>
+            </div>
+            <div className="blog-content-tagline">
+              "Empowering Dreams, Igniting Minds: Lighting the Path for
+              Underprivileged Students."
+            </div>
+          </div>
+          <div className="event-btn-wraper">
+            <div className="event-btn">
+              Event Details
+              <span>
+                <BiMessageRoundedDetail />
+              </span>
+            </div>
+          </div>
+        </div>
       </div>
       <EventDetails
         eventId={activeEvent}
